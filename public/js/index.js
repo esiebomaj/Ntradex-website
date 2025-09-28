@@ -31,6 +31,8 @@ const countries = [
   },
 ]
 
+
+
 var exchangeRates = {
   // GBP_NGN: 940,
   // GBP_USD: 1.3,
@@ -67,6 +69,7 @@ var exchangeRates = {
 let selectedCountrySend = countries.find((c) => c.code === 'GBP');
 let selectedCountryReceive = countries.find((c) => c.code === 'NGN');
 
+
 // Function to swap send and receive currencies
 function swapCountries() {
   const temp = selectedCountrySend;
@@ -98,6 +101,7 @@ function updateSelectedCountryDisplay() {
    <span class='selected-country-code'> ${selectedCountryReceive.code}</span>
   `;
 }
+
 
 function renderCountryOptions(dropdownId, selectedCountry, excludedCountry) {
   const optionsContainer = document.getElementById(dropdownId);

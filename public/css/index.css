@@ -331,14 +331,7 @@
   scrollbar-width: none;
 }
 
-.country-image {
-  width: 100%;
-  max-width: 30px;
-  height: 30px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 1px solid rgba(244, 246, 250, 1);
-}
+
 
 .arrow-swap {
   position: absolute;

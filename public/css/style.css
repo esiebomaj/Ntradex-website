@@ -2337,3 +2337,11 @@ footer.mil-footer-dark .mil-footer-bottom {
     width: 100%;
     flex: 1;
 }
+.country-image {
+  width: 100%;
+  max-width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid rgba(244, 246, 250, 1);
+}
