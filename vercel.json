@@ -70,6 +70,22 @@
         {
             "src": "/img/(.*)",
             "dest": "/public/img/$1"
+        },
+        {
+        "src": "/([a-z]{2,3})/css/(.*)",
+        "dest": "/public/css/$2"
+        },
+        {
+        "src": "/([a-z]{2,3})/js/(.*)",
+        "dest": "/public/js/$2"
+        },
+        {
+        "src": "/([a-z]{2,3})/fonts/(.*)",
+        "dest": "/public/fonts/$2"
+        },
+        {
+        "src": "/([a-z]{2,3})/img/(.*)",
+        "dest": "/public/img/$2"
         }
     ]
 }
