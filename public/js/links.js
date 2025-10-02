@@ -1,3 +1,33 @@
+const localeOptions = [
+  {
+    name: "Australia",
+    path: "/au",
+    image: "img/Flag_of_Aus.png"
+    
+  },
+  {
+    name: "Canada",
+    path: "/",
+    image: "img/Flag_of_Canada.svg.png"
+  },
+  {
+    name: "Nigeria",
+    path: "/ng",
+    image: "img/Flag_of_Nigeria.png"
+  },
+   {
+    name: "U.S.A",
+    path: "/us",
+    image: "img/Flag_of_the_United_States.svg.png"
+  },
+  {
+    name: "Great Britain",
+    path: "/gb",
+    image: "img/Flag_of_the_United_Kingdom.svg.png"
+  },
+
+]
+
 function getRegionPrefix() {
     const parts = window.location.pathname.split("/").filter(Boolean);
     const region = parts.length > 0 ? parts[0] : null;
@@ -16,19 +46,7 @@ document.querySelectorAll("a[data-path]").forEach(link => {
     link.setAttribute("href", prefix + path);
 });
 
-const localeOptions = [
-  {
-    name: "Australia",
-    path: "/au",
-    image: "img/Flag_of_Australia.png"
-    
-  },
-    {
-    name: "Canada",
-    path: "/",
-    image: "img/Flag_of_Canada.svg.png"
-  },
-]
+
 
 let defaultLocale = localeOptions.find((c) => c.path == getRegionPrefix()) || localeOptions.find((c) => c.name == "Canada")
 
