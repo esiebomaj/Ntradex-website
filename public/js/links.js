@@ -1,10 +1,10 @@
 const localeOptions = [
-  {
-    name: "Australia",
-    path: "/au",
-    image: "img/Flag_of_Aus.png"
+  // {
+  //   name: "Australia",
+  //   path: "/au",
+  //   image: "img/Flag_of_Aus.png"
     
-  },
+  // },
   {
     name: "Canada",
     path: "/",
