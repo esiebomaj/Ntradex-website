@@ -10,13 +10,7 @@
             "use": "@vercel/static"
         }
     ],
-    "redirects": [
-    {
-      "source": "/au(.*)",
-      "destination": "/",
-      "permanent": true
-    }
-  ],
+
     "routes": [
         { "src": "/([a-z]{2,3})/about", "dest": "/public/about.html" },
         { "src": "/([a-z]{2,3})/services", "dest": "/public/services.html" },
