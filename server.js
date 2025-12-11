@@ -11,16 +11,16 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use((req, res, next) => {
+// app.use((req, res, next) => {
   
-   if (req.path.startsWith('/au')) { 
+//   //  if (req.path.startsWith('/au')) { 
    
-    return res.redirect('/'); 
-   }
+//   //   return res.redirect('/'); 
+//   //  }
 
-  console.log('path', req.path)
-  next()
-});
+//   console.log('path', req.path)
+//   next()
+// });
 
 // Serve static files (HTML, CSS, JS)
 // app.use(express.static('public'));
