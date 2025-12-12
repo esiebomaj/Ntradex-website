@@ -119,13 +119,13 @@
         <!-- top panel end -->
         <div class="mil-top-panel">
             <div class="container">
-                <a href="/" class="mil-logo">
+                <a data-path="/" class="mil-logo">
                     <img src="img/logo-dark.png" alt="Global Payments - ntradeX" width="150" height="32">
                 </a>
                 <nav class="mil-top-menu">
                     <ul>
                         <li class="">
-                            <a href="/">Features</a>
+                            <a data-path="/">Features</a>
                         </li>
                         <li class="mil-has-children">
                             <a href="#.">Company</a>
@@ -139,7 +139,10 @@
                             <a href="#community">Community</a>
                         </li> -->
                         <li>
-                            <a href="/contact">Support</a>
+                            <a data-path="/contact">Support</a>
+                        </li>
+                          <li class="mil-has-children">
+                            <a href="#." id="default-country"></a>
                         </li>
                     </ul>
                 </nav>
@@ -165,7 +168,7 @@
                                 <div class="mil-text-m mil-mb-20">ntradeX</div>
                                 <h1 class="mil-mb-60">Terms & Conditons of Service</h1>
                                 <ul class="mil-breadcrumbs mil-pub-info mil-center">
-                                    <li><a href="/">Home</a></li>
+                                    <li><a data-path="/">Home</a></li>
                                     <li><a href="/about">About</a></li>
                                     <li><a href="">Terms</a></li>
                                 </ul>
@@ -585,7 +588,7 @@
                 <div class="container">
                     <div class="row">
                         <!-- <div class="col-xl-3">
-                            <a href="/" class="mil-footer-logo mil-mb-60">
+                            <a data-path="/" class="mil-footer-logo mil-mb-60">
                                 <img src="/img/logo-dark.png" alt="ntradeX" width="150" height="32">
                             </a>
                         </div> -->
@@ -609,7 +612,7 @@
                                     <a href="/services">Services</a>
                                 </li>
                                 <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a href="/contact">Contact Us</a>
+                                    <a data-path="/contact">Contact Us</a>
                                 </li> -->
                             </ul>
                         </div>
@@ -621,7 +624,7 @@
                                     <a href="mailto:support@ntradex.ca">Help Desk</a>
                                 </li>
                                 <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a href="/contact">Contact Us</a>
+                                    <a data-path="/contact">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -663,13 +666,13 @@
                                     <a href="/about#values">Our Values</a>
                                 </li> -->
                                 <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a href="/terms">Terms</a>
+                                    <a data-path="/terms">Terms</a>
                                 </li>
                                 <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a href="/privacy">Privacy</a>
+                                    <a data-path="/privacy">Privacy</a>
                                 </li>
                                 <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a href="/aml-policy">AML Policy</a>
+                                    <a data-path="/aml-policy">AML Policy</a>
                                 </li>
                             </ul>
                         </div>
@@ -741,6 +744,7 @@
     <script src="js/plugins/magnific-popup.js"></script>
 
     <script src="js/main.js"></script>
+     <script src="/js/links.js"></script>
 
 </body>
 
