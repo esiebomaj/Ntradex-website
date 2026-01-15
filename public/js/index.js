@@ -1,33 +1,47 @@
+
+console.log("index")
 const countries = [
   {
     code: 'GBP',
     currency: 'Pound',
     name: 'GBP - United Kingdom',
     image: 'img/Flag_of_the_United_Kingdom.svg.png',
+    path: "gb"
   },
   {
     code: 'NGN',
     currency: 'Naira',
     name: 'NGN - Nigeria',
-    image: 'img/Flag_of_Nigeria.svg.png',
+    image: 'img/Flag_of_Nigeria.png',
+    path:  "ng"
   },
   {
     code: 'USD',
     currency: 'Dollar',
     name: 'USD - United States',
     image: 'img/Flag_of_the_United_States.svg.png',
+     path: "us"
   },
   {
     code: 'EUR',
     currency: 'Euro',
     name: 'EUR - European Union',
     image: 'https://cdn.britannica.com/66/96866-050-BBAE91CE/Flag-European-Union.jpg',
+    path: "eu"
   },
   {
     code: 'CAD',
     currency: 'Dollar',
     name: 'Canadian Dollar',
     image: 'img/Flag_of_Canada.svg.png',
+     path: "ca"
+  },
+  {
+    code: 'AUS',
+    currency: 'Dollar',
+    name: 'Australian Dollar',
+    image: 'img/Flag_of_Aus.png',
+     path: "au"
   },
 ]
 
@@ -66,9 +80,37 @@ var exchangeRates = {
   // CAD_JPY: 110,
 };
 
-let selectedCountrySend = countries.find((c) => c.code === 'GBP');
-let selectedCountryReceive = countries.find((c) => c.code === 'NGN');
+function getRegionPrefix() {
+    const parts = window.location.pathname.split("/").filter(Boolean);
+    const region = parts.length > 0 ? parts[0] : null;
 
+    if (region && region.length <= 3) {
+      return `${region}`;
+    }
+    return "";
+  }
+
+
+
+function getReceivingCurrency(sendingCurrency){
+  let code = "NGN"
+  if(sendingCurrency.code === 'NGN'){
+    code = "CAD"
+  }
+ 
+  return  countries.find((c) => c.code == code)
+}
+
+
+console.log("defaultPrefiz", getRegionPrefix())
+
+const defaultCountry= countries.find((c) => c.path == getRegionPrefix()) || countries.find((c) => c.code == "CAD")
+
+let selectedCountrySend = countries.find((c) => c.code === defaultCountry.code);
+let selectedCountryReceive = getReceivingCurrency(selectedCountrySend);
+
+
+console.log("defaultLocale", defaultCountry)
 
 // Function to swap send and receive currencies
 function swapCountries() {
