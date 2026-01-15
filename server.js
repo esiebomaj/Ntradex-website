@@ -11,20 +11,24 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-// app.use((req, res, next) => {
-  
-//   //  if (req.path.startsWith('/au')) { 
-   
-//   //   return res.redirect('/'); 
-//   //  }
-
-//   console.log('path', req.path)
-//   next()
-// });
 
 // Serve static files (HTML, CSS, JS)
 // app.use(express.static('public'));
 // app.use('/:region', express.static('public'));
+
+const getPathForRegion = (region, page) => {
+  ALLOWED_REGIONS = ["au", "ng", "gb", "us"]
+
+  const isRegion = ALLOWED_REGIONS.includes(region);
+  const resolvedPage = page || "index"
+   console.log('isRegion',isRegion)
+
+  const filePath = isRegion
+    ? path.join(__dirname, "public", "regions", region, `${resolvedPage}.html`)
+    : path.join(__dirname, "public", `${resolvedPage}.html`);
+    
+  return filePath
+}
 
 
 
@@ -34,42 +38,55 @@ siteRouter.get("/", (_, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-siteRouter.get("/about", (_, res) => {
-  res.sendFile(path.join(__dirname, "public", "about.html"));
+siteRouter.get("/:region?/:page?", (req, res, next) => {
+  const { region, page} = req.params;
+  console.log("region", region, page)
+  // res.sendFile(path.join(__dirname, "public", "about.html"));
+  res.sendFile(getPathForRegion(region, page));
 });
 
-siteRouter.get("/services", (_, res) => {
-  res.sendFile(path.join(__dirname, "public", "services.html"));
-});
 
-siteRouter.get("/contact", (_, res) => {
-    console.log("contact")
-  res.sendFile(path.join(__dirname, "public", "contact.html"));
-});
 
-siteRouter.get("/privacy", (_, res) => {
-  res.sendFile(path.join(__dirname, "public", "privacy.html"));
-});
+// siteRouter.get("/:region?/services", (req, res) => {
+//   res.sendFile(getPathForRegion(region, "services"))
+// });
 
-siteRouter.get("/terms", (_, res) => {
-  res.sendFile(path.join(__dirname, "public", "terms.html"));
-});
+// siteRouter.get("/:region?/contact", (req, res) => {
+//     console.log("contact")
+//   res.sendFile(getPathForRegion(region, "contact"))
+// });
 
-siteRouter.get("/aml-policy", (_, res) => {
-  res.sendFile(path.join(__dirname, "public", "aml-policy.html"));
-});
+// siteRouter.get("/:region?/privacy", (req, res) => {
+//   res.sendFile(path.join(__dirname, "public", "privacy.html"));
+// });
 
-siteRouter.get("/sitemap.xml", (_, res) => {
-  res.sendFile(path.join(__dirname, "public", "sitemap.xml"));
-});
+// siteRouter.get("/:region?/terms", (req, res) => {
+//   res.sendFile(path.join(__dirname, "public", "terms.html"));
+// });
 
-// router for both root and region-prefixed paths
+// siteRouter.get("/:region?/aml-policy", (req, res) => {
+//   res.sendFile(path.join(__dirname, "public", "aml-policy.html"));
+// });
+
+// siteRouter.get("/:region?/sitemap.xml", (req, res) => {
+//   res.sendFile(path.join(__dirname, "public", "sitemap.xml"));
+// });
+
+app.use(
+  express.static(path.join(__dirname, "public"), {
+    index: false, 
+    extensions: ["js", "css", "svg", "png"]
+  })
+);
+app.use("/:region", express.static(path.join(__dirname, "public"),
+{
+    index: false, 
+    extensions: ["js", "css", "svg", "png"]
+  }));
+
+
 app.use("/", siteRouter);
-app.use("/:region", siteRouter);
 
-
-app.use(express.static(path.join(__dirname, "public")));
-app.use("/:region", express.static(path.join(__dirname, "public")));
 
 // Start the server
 app.listen(PORT, () => {

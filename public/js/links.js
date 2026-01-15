@@ -49,7 +49,6 @@ document.querySelectorAll("a[data-path]").forEach(link => {
 
 let defaultLocale = localeOptions.find((c) => c.path == getRegionPrefix()) || localeOptions.find((c) => c.name == "Canada")
 
-console.log("default locale", defaultLocale)
 
 function updateDefaultLocale() {
   const country = defaultLocale;
