@@ -1,5 +1,4 @@
 
-console.log("index")
 const countries = [
   {
     code: 'GBP',
@@ -102,15 +101,11 @@ function getReceivingCurrency(sendingCurrency){
 }
 
 
-console.log("defaultPrefiz", getRegionPrefix())
-
 const defaultCountry= countries.find((c) => c.path == getRegionPrefix()) || countries.find((c) => c.code == "CAD")
 
 let selectedCountrySend = countries.find((c) => c.code === defaultCountry.code);
 let selectedCountryReceive = getReceivingCurrency(selectedCountrySend);
 
-
-console.log("defaultLocale", defaultCountry)
 
 // Function to swap send and receive currencies
 function swapCountries() {
@@ -188,6 +183,7 @@ function selectCountry(dropdownId, country) {
 }
 
 function updateExchangeRate() {
+  
   const rateKey = `${selectedCountrySend.code}_${selectedCountryReceive.code}`;
   const rate = exchangeRates[rateKey] || 1;
   const sendInput = document.querySelector('.money-to-convert');
@@ -270,6 +266,7 @@ async function getExchangeRates() {
       const key = `${other_currency}_${main_currency}`;
 
       exchangeRates[key] = parseFloat(rate);
+   
     });
 
     return exchangeRates;
