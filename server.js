@@ -21,11 +21,15 @@ const getPathForRegion = (region, page) => {
 
   const isRegion = ALLOWED_REGIONS.includes(region);
   const resolvedPage = page || "index"
+  console.log(" page", page)
+  console.log("resolved page", resolvedPage)
    console.log('isRegion',isRegion)
 
   const filePath = isRegion
     ? path.join(__dirname, "public", "regions", region, `${resolvedPage}.html`)
     : path.join(__dirname, "public", `${resolvedPage}.html`);
+
+    console.log("file path", filePath)
     
   return filePath
 }
@@ -38,12 +42,27 @@ siteRouter.get("/", (_, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-siteRouter.get("/:region?/:page?", (req, res, next) => {
+siteRouter.get("/:region(au|us|gb|ng|eu)/:page?", (req, res, next) => {
   const { region, page} = req.params;
-  console.log("region", region, page)
-  // res.sendFile(path.join(__dirname, "public", "about.html"));
+  
   res.sendFile(getPathForRegion(region, page));
 });
+siteRouter.get("/:region(au|us|gb|ng|eu)/", (req, res, next) => {
+  const { region } = req.params;
+
+  res.sendFile(getPathForRegion(region, page));
+});
+
+siteRouter.get("/:page", (req, res, next) => {
+  const { page} = req.params;
+  const region = null
+ 
+  res.sendFile(getPathForRegion(region, page));
+});
+
+
+
+
 
 
 

@@ -235,6 +235,8 @@ document.addEventListener('DOMContentLoaded', function () {
       receiveDropdown.classList.remove('active');
   });
 
+  updateExchangeRate();
+
   updateSelectedCountryDisplay();
   renderCountryOptions(
     'country-options-send',
