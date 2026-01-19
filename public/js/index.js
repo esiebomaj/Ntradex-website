@@ -36,7 +36,7 @@ const countries = [
      path: "ca"
   },
   {
-    code: 'AUS',
+    code: 'AUD',
     currency: 'Dollar',
     name: 'Australian Dollar',
     image: 'img/Flag_of_Aus.png',
@@ -185,9 +185,12 @@ function selectCountry(dropdownId, country) {
 function updateExchangeRate() {
   
   const rateKey = `${selectedCountrySend.code}_${selectedCountryReceive.code}`;
+  console.log('exchange rates', exchangeRates)
+  console.log('rateKey', rateKey)
   const rate = exchangeRates[rateKey] || 1;
   const sendInput = document.querySelector('.money-to-convert');
   const sendAmount = parseFloat(sendInput.value) || 0;
+   console.log('sendAmount', sendAmount)
 
   if (sendAmount === 0) {
     setTimeout(() => {
