@@ -210,8 +210,8 @@ document
   .querySelector('.money-to-convert')
   .addEventListener('input', updateExchangeRate);
 
-document.addEventListener('DOMContentLoaded', function () {
-  getExchangeRates();
+document.addEventListener('DOMContentLoaded', async function () {
+  await getExchangeRates();
 
   const sendDropdown = document.querySelector('.dropdown-send');
   const receiveDropdown = document.querySelector('.dropdown-receive');
