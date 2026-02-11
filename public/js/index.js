@@ -185,11 +185,9 @@ function selectCountry(dropdownId, country) {
 function updateExchangeRate() {
   
   const rateKey = `${selectedCountrySend.code}_${selectedCountryReceive.code}`;
-  
   const rate = exchangeRates[rateKey] || 1;
   const sendInput = document.querySelector('.money-to-convert');
   const sendAmount = parseFloat(sendInput.value) || 0;
- 
 
   if (sendAmount === 0) {
     setTimeout(() => {
@@ -209,8 +207,8 @@ document
   .querySelector('.money-to-convert')
   .addEventListener('input', updateExchangeRate);
 
-document.addEventListener('DOMContentLoaded', async function () {
-  await getExchangeRates();
+document.addEventListener('DOMContentLoaded', function () {
+  getExchangeRates();
 
   const sendDropdown = document.querySelector('.dropdown-send');
   const receiveDropdown = document.querySelector('.dropdown-receive');
@@ -236,8 +234,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (!receiveDropdown.contains(e.target))
       receiveDropdown.classList.remove('active');
   });
-
-  updateExchangeRate();
 
   updateSelectedCountryDisplay();
   renderCountryOptions(
