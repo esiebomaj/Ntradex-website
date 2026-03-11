@@ -1,5 +1,2 @@
 # ntradex-web
-<<<<<<< HEAD
-Ntradex Website
-=======
->>>>>>> 1171048 (Ntradex Website Transition)
+Ntradex Website — Cross-border payments platform for Africa &amp; the Global North.

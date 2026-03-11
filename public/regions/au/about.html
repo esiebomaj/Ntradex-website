@@ -1,621 +1,686 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
+<meta charset="UTF-8" />
+  <base href="/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connecting People to Markets in Australia - ntradeX</title>
+<meta name="description" content="Founded in 2017 with roots in Africa, Ntradex has spent nearly a decade simplifying cross-border payments across 80+ countries and 4,800+ corridors for individuals and businesses.">
+<meta property="og:title" content="About Ntradex — Built for Cross-Border Commerce">
+<meta property="og:description" content="From a single currency exchange corridor in Africa to 80+ countries and 4,800+ active routes. The Ntradex story — built for people who move the world's money.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ntradex.ca/about">
+<link rel="canonical" href="https://ntradex.ca/about">
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W9DB553R');</script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZYRWDZ36S"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7ZYRWDZ36S');</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","paa0nm4yv1");</script>
+<link rel="stylesheet" href="css/ntradex.css">
+<link rel="stylesheet" href="fonts/css/switzer.css">
+<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<style>
+/* ── About page styles ── */
+.nx-about-hero{background:linear-gradient(135deg,var(--blue-deep) 0%,var(--blue-dark) 60%,#0a2d4a 100%);padding:140px 0 80px;position:relative;overflow:hidden;}
+.nx-about-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(1,113,188,.18) 0%,transparent 70%);pointer-events:none;}
+.nx-about-hero-inner{max-width:860px;}
+.nx-about-hero .nx-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(1,113,188,.25);border:1px solid rgba(1,113,188,.4);color:var(--blue-mid);font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:20px;margin-bottom:24px;}
+.nx-about-hero h1{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:800;color:#fff;line-height:1.12;margin-bottom:20px;}
+.nx-about-hero h1 span{color:var(--blue-mid);}
+.nx-about-hero p{font-size:1.15rem;color:rgba(255,255,255,.75);max-width:640px;line-height:1.7;margin-bottom:36px;}
+.nx-about-hero-stats{display:flex;gap:40px;flex-wrap:wrap;}
+.nx-about-hero-stat{border-left:3px solid var(--blue);padding-left:16px;}
+.nx-about-hero-stat strong{display:block;font-size:1.8rem;font-weight:800;color:#fff;line-height:1;}
+.nx-about-hero-stat span{font-size:.82rem;color:rgba(255,255,255,.55);margin-top:4px;display:block;}
 
-    <title>About Ntradex - Your Global Money Transfer Partner</title>
+/* Mission */
+.nx-mission{padding:80px 0;background:#fff;}
+.nx-mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+.nx-mission-text .nx-section-label{display:inline-block;background:var(--blue-light);color:var(--blue);font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:4px;margin-bottom:16px;}
+.nx-mission-text h2{font-size:clamp(1.7rem,3vw,2.4rem);font-weight:800;color:var(--blue-deep);line-height:1.2;margin-bottom:20px;}
+.nx-mission-text p{color:#555;line-height:1.75;margin-bottom:16px;font-size:.97rem;}
+.nx-mission-visual{background:linear-gradient(135deg,var(--blue-dark),var(--blue-deep));border-radius:20px;padding:40px;display:flex;flex-direction:column;gap:20px;}
+.nx-mission-pill{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:18px 22px;display:flex;align-items:center;gap:16px;}
+.nx-mission-pill i{font-size:1.3rem;color:var(--blue-mid);width:28px;flex-shrink:0;}
+.nx-mission-pill-text strong{display:block;color:#fff;font-size:.92rem;font-weight:700;margin-bottom:3px;}
+.nx-mission-pill-text span{color:rgba(255,255,255,.55);font-size:.8rem;line-height:1.4;}
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="HandheldFriendly" content="true">
+/* Story */
+.nx-story{padding:80px 0;background:var(--neutral-50,#f8f9fa);}
+.nx-story-inner{max-width:760px;margin:0 auto;}
+.nx-story-inner h2{font-size:clamp(1.7rem,3vw,2.3rem);font-weight:800;color:var(--blue-deep);text-align:center;margin-bottom:16px;}
+.nx-story-inner .nx-lead{text-align:center;color:#666;font-size:1.05rem;line-height:1.7;margin-bottom:52px;}
+.nx-timeline{position:relative;padding-left:40px;}
+.nx-timeline::before{content:'';position:absolute;left:12px;top:6px;bottom:6px;width:2px;background:linear-gradient(to bottom,var(--blue),var(--blue-mid));}
+.nx-tl-item{position:relative;margin-bottom:40px;}
+.nx-tl-item:last-child{margin-bottom:0;}
+.nx-tl-dot{position:absolute;left:-34px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--blue);border:3px solid #fff;box-shadow:0 0 0 2px var(--blue);flex-shrink:0;}
+.nx-tl-year{display:inline-block;background:var(--blue);color:#fff;font-size:.72rem;font-weight:800;letter-spacing:.08em;padding:3px 9px;border-radius:4px;margin-bottom:8px;}
+.nx-tl-item h3{font-size:1.05rem;font-weight:700;color:var(--blue-deep);margin-bottom:6px;}
+.nx-tl-item p{color:#666;font-size:.9rem;line-height:1.65;}
 
-    <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="Learn about Ntradex, a trusted platform for cross-border payments, currency exchange, and secure international funds transfer. Send money to Nigeria easily.">
-    <meta name="keywords"
-        content="ntradex, currency exchange, international payments, send money to africa, naira exchange rates, international money transfer, cross border payments, sending money internationally, transfer funds to nigeria, international funds transfer, travel, immigration, foreign exchange, money transfer, payments, exchange rates, fx">
-    <meta name="author" content="bslthemes">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    <meta name="distribution" content="global">
+/* Values */
+.nx-values{padding:80px 0;background:#fff;}
+.nx-values-header{text-align:center;max-width:600px;margin:0 auto 52px;}
+.nx-values-header h2{font-size:clamp(1.7rem,3vw,2.3rem);font-weight:800;color:var(--blue-deep);margin-bottom:14px;}
+.nx-values-header p{color:#666;font-size:1rem;line-height:1.7;}
+.nx-values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.nx-value-card{background:var(--neutral-50,#f8f9fa);border:1px solid #e8edf2;border-radius:16px;padding:32px 28px;transition:box-shadow .2s,transform .2s;}
+.nx-value-card:hover{box-shadow:0 8px 32px rgba(1,113,188,.1);transform:translateY(-3px);}
+.nx-value-icon{width:52px;height:52px;border-radius:12px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;margin-bottom:18px;}
+.nx-value-icon i{font-size:1.3rem;color:var(--blue);}
+.nx-value-card h3{font-size:1rem;font-weight:700;color:var(--blue-deep);margin-bottom:10px;}
+.nx-value-card p{font-size:.88rem;color:#666;line-height:1.65;}
 
-    <!-- Open Graph for social media -->
-    <meta property="og:title" content="About Ntradex - Your Global Money Transfer Partner">
-    <meta property="og:description"
-        content="Learn about Ntradex, a trusted platform for cross-border payments, currency exchange, and secure international funds transfer. Send money to Nigeria easily.">
-    <meta property="og:image" content="https://ntradex.ca/img/home-1/3.png">
-    <!-- Replace with actual image -->
-    <meta property="og:url" content="https://ntradex.ca">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="ntradex">
-    <meta property="og:locale" content="en_CA">
+/* Team */
+.nx-team{padding:80px 0;background:var(--neutral-50,#f8f9fa);}
+.nx-team-header{text-align:center;max-width:560px;margin:0 auto 52px;}
+.nx-team-header h2{font-size:clamp(1.7rem,3vw,2.3rem);font-weight:800;color:var(--blue-deep);margin-bottom:14px;}
+.nx-team-header p{color:#666;font-size:1rem;line-height:1.7;}
+.nx-team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.nx-team-card{background:#fff;border:1px solid #e8edf2;border-radius:16px;padding:32px 24px;text-align:center;}
+.nx-team-avatar{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--blue-dark),var(--blue));display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.6rem;font-weight:800;color:#fff;}
+.nx-team-card h3{font-size:1rem;font-weight:700;color:var(--blue-deep);margin-bottom:4px;}
+.nx-team-card .nx-role{font-size:.8rem;color:var(--blue);font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;display:block;}
+.nx-team-card p{font-size:.85rem;color:#777;line-height:1.6;}
+.nx-team-hiring{grid-column:1/-1;text-align:center;padding:32px;background:linear-gradient(135deg,var(--blue-deep),var(--blue-dark));border-radius:16px;color:#fff;}
+.nx-team-hiring p{margin-bottom:16px;font-size:1rem;color:rgba(255,255,255,.8);}
+.nx-team-hiring a{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--blue-dark);font-weight:700;padding:12px 24px;border-radius:8px;text-decoration:none;font-size:.9rem;transition:transform .2s;}
+.nx-team-hiring a:hover{transform:translateY(-2px);}
 
-    <!-- Twitter Card for better sharing on Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="About Ntradex - Your Global Money Transfer Partner">
-    <meta name="twitter:description"
-        content="Learn about Ntradex, a trusted platform for cross-border payments, currency exchange, and secure international funds transfer. Send money to Nigeria easily.">
-    <meta name="twitter:image" content="https://ntradex.ca/img/home-1/3.png">
-    <!-- Replace with actual image -->
-    <meta name="twitter:site" content="@ntradex_">
-    <meta name="twitter:creator" content="@ntradex_">
+/* Compliance strip */
+.nx-about-compliance{padding:72px 0;background:var(--blue-deep);position:relative;overflow:hidden;}
+.nx-about-compliance::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(1,113,188,.2) 0%,transparent 60%);pointer-events:none;}
+.nx-about-compliance-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.nx-about-compliance-text h2{font-size:clamp(1.6rem,2.8vw,2.2rem);font-weight:800;color:#fff;margin-bottom:16px;}
+.nx-about-compliance-text p{color:rgba(255,255,255,.65);font-size:.95rem;line-height:1.7;margin-bottom:24px;}
+.nx-about-compliance-text a{display:inline-flex;align-items:center;gap:8px;color:var(--blue-mid);font-weight:600;text-decoration:none;font-size:.9rem;}
+.nx-about-compliance-text a:hover{text-decoration:underline;}
+.nx-compliance-badge-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.nx-cbadge{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:16px 18px;display:flex;align-items:center;gap:12px;}
+.nx-cbadge i{font-size:1.1rem;color:var(--blue-mid);flex-shrink:0;}
+.nx-cbadge strong{display:block;color:#fff;font-size:.82rem;font-weight:700;}
+.nx-cbadge span{color:rgba(255,255,255,.5);font-size:.72rem;line-height:1.4;display:block;margin-top:2px;}
 
-    <!-- switzer font css -->
-    <link rel="stylesheet" href="/fonts/css/switzer.css" type="text/css" media="all">
-    <!-- font awesome css -->
-    <link rel="stylesheet" href="/fonts/css/font-awesome.min.css" type="text/css" media="all">
-    <!-- bootstrap grid css -->
-    <link rel="stylesheet" href="/css/plugins/bootstrap-grid.css" type="text/css" media="all">
-    <!-- swiper css -->
-    <link rel="stylesheet" href="/css/plugins/swiper.min.css" type="text/css" media="all">
-    <!-- magnific popup -->
-    <link rel="stylesheet" href="/css/plugins/magnific-popup.css" type="text/css" media="all">
-    <!-- ntradeX css -->
-    <link rel="stylesheet" href="/css/style.css" type="text/css" media="all">
+/* Where we operate */
+.nx-where{padding:80px 0;background:#fff;}
+.nx-where-header{text-align:center;max-width:560px;margin:0 auto 52px;}
+.nx-where-header h2{font-size:clamp(1.7rem,3vw,2.3rem);font-weight:800;color:var(--blue-deep);margin-bottom:14px;}
+.nx-where-header p{color:#666;font-size:1rem;line-height:1.7;}
+.nx-where-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.nx-where-card{border:1.5px solid #e8edf2;border-radius:16px;padding:28px 20px;text-align:center;transition:border-color .2s,box-shadow .2s;}
+.nx-where-card:hover{border-color:var(--blue);box-shadow:0 4px 20px rgba(1,113,188,.08);}
+.nx-where-flag{font-size:2.2rem;margin-bottom:12px;display:block;}
+.nx-where-card h3{font-size:.95rem;font-weight:700;color:var(--blue-deep);margin-bottom:6px;}
+.nx-where-card p{font-size:.8rem;color:#888;line-height:1.5;}
+.nx-where-card .nx-soon{display:inline-block;background:rgba(1,113,188,.08);color:var(--blue);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:2px 8px;border-radius:4px;margin-top:6px;}
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+/* CTA */
+.nx-about-cta{padding:80px 0;background:linear-gradient(135deg,var(--blue-light) 0%,#fff 100%);}
+.nx-about-cta-inner{text-align:center;max-width:640px;margin:0 auto;}
+.nx-about-cta h2{font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;color:var(--blue-deep);margin-bottom:16px;}
+.nx-about-cta p{color:#666;font-size:1.05rem;line-height:1.7;margin-bottom:36px;}
+.nx-about-cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
 
-    <script id="ze-snippet"
-        src="https://static.zdassets.com/ekr/snippet.js?key=ab55e257-a5b0-4c54-b58f-f78d7d19606f"> </script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZYRWDZ36S"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-7ZYRWDZ36S');
-    </script>
-
-    <!-- Google Tag Manager -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-    </script>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-W9DB553R');</script>
-    <!-- End Google Tag Manager -->
-
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "paa0nm4yv1");
-    </script>    
-
+/* Responsive */
+@media(max-width:1024px){
+  .nx-mission-grid{grid-template-columns:1fr;gap:40px;}
+  .nx-values-grid{grid-template-columns:repeat(2,1fr);}
+  .nx-team-grid{grid-template-columns:repeat(2,1fr);}
+  .nx-about-compliance-inner{grid-template-columns:1fr;gap:40px;}
+  .nx-where-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:768px){
+  .nx-about-hero{padding:120px 0 60px;}
+  .nx-about-hero-stats{gap:24px;}
+  .nx-about-hero-stat strong{font-size:1.4rem;}
+  .nx-values-grid{grid-template-columns:1fr;}
+  .nx-team-grid{grid-template-columns:1fr;}
+  .nx-compliance-badge-grid{grid-template-columns:1fr;}
+  .nx-where-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:480px){
+  .nx-where-grid{grid-template-columns:1fr 1fr;}
+  .nx-about-cta-btns{flex-direction:column;align-items:center;}
+}
+</style>
 </head>
-
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9DB553R"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9DB553R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <!-- wrapper -->
-    <div id="smooth-wrapper" class="mil-wrapper">
-
-        <!-- preloader -->
-        <div class="mil-preloader">
-            <div class="mil-load"></div>
-            <p class="h2 mil-mb-30"><img src="img/preloader.gif" alt="currency exchange" width="200"></p>
+<!-- NAV -->
+<nav class="nx-nav" id="nx-nav" role="navigation" aria-label="Main navigation">
+  <div class="nx-nav-inner">
+    <a href="/" data-path="/" class="nx-logo" aria-label="Ntradex — Home">
+      <img src="img/logo-dark.png" alt="Ntradex" />
+    </a>
+    <ul class="nx-nav-links" role="list">
+      <li><a href="/personal" data-path="/personal">Personal</a></li>
+      <li><a href="/business" data-path="/business">Business</a></li>
+      <li class="nx-nav-item">
+        <a href="/services" data-path="/services">Services <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
+        <div class="nx-dropdown">
+          <a href="/services#remittance" data-path="/services#remittance">Remittance</a>
+          <a href="/services#business-fx" data-path="/services#business-fx">Business FX</a>
+          <a href="/services#api" data-path="/services#api">API &amp; Integrations</a>
         </div>
-        <!-- preloader end -->
-
-        <!-- scroll progress -->
-        <div class="mil-progress-track">
-            <div class="mil-progress"></div>
+      </li>
+      <li class="nx-nav-item">
+        <a href="#">Company <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
+        <div class="nx-dropdown">
+          <a href="/about" data-path="/about" class="active">About</a>
+          <a href="/contact" data-path="/contact">Contact</a>
+          <a target="_blank" href="https://blog.ntradex.ca/blogposts">Blog</a>
+          <a target="_blank" href="https://blog.ntradex.ca/base">Knowledge Base</a>
         </div>
-        <!-- scroll progress end -->
-
-        <!-- back to top -->
-        <div class="progress-wrap active-progress"></div>
-
-        <!-- top panel end -->
-        <div class="mil-top-panel">
-            <div class="container">
-                <a data-path="/" class="mil-logo">
-                    <img src="img/logo-dark.png" alt="international payments" width="150" height="32">
-                </a>
-                <nav class="mil-top-menu">
-                    <ul>
-                        <li class="">
-                            <a   data-path="/">Features</a>
-                        </li>
-                        <li class="mil-has-children mil-active">
-                            <a href="#.">Company</a>
-                            <ul>
-                                <li><a href="/about">About Us</a></li>
-                                <li><a target="_blank" href="https://blog.ntradex.ca/blogposts">Blog</a></li>
-                                <li><a target="_blank" href="https://blog.ntradex.ca/base">Knowledge Base</a></li>
-                            </ul>
-                        </li>
-                        
-                        <!-- <li>
-                            <a href="#community">Community</a>
-                        </li> -->
-                        <li>
-                            <a  data-path="/contact">Support</a>
-                        </li>
-                         <li class="mil-has-children">
-                            <a href="#." id="default-country"></a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="mil-menu-buttons">
-                    <div class="mil-menu-btn">
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- top panel end -->
-
-        <!-- content -->
-        <div id="smooth-content">
-
-            <!-- banner -->
-            <div class="mil-banner mil-banner-inner mil-dissolve">
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-xl-8">
-                            <div class="mil-banner-text mil-text-center">
-                                <div class="mil-text-m mil-mb-20">Company</div>
-                                <h1 class="mil-mb-60">More than a Platform, <br>a Financial Revolution</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- banner end -->
-
-            <!-- features -->
-            <section id="vision">
-                <div class="mil-features mil-p-0-80">
-                    <div class="container">
-                        <div class="row justify-content-between align-items-center">
-                            <div class="col-xl-5 mil-mb-80">
-                                <h2 class="mil-mb-30 mil-up">The Vision That Drives Our Team</h2>
-                                <p class="mil-text-m mil-soft mil-mb-60 mil-up">
-                                    ntradeX, is a registered product of Ntradex, Inc. and has its roots in Nigeria. ntradeX has been facilitating payments for quarter of a decade.
-                                </p>
-                                <p class="mil-text-m mil-soft mil-mb-60 mil-up">
-                                    Our mission is to enable immigrants and travelers across the world, hold, and
-                                    transact in multiple currencies seamlessly.
-                                </p>
-                                <ul class="mil-list-2 mil-type-2">
-                                    <li>
-                                        <div class="mil-up">
-                                            <h5 class="mil-mb-15">Transformative Vision</h5>
-                                            <p class="mil-text-m mil-soft">We are committed to localizing international
-                                                payments for all customers.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-xl-6 mil-mb-80">
-                                <div class="mil-image-frame mil-up">
-                                    <img src="img/inner-pages/3.png" alt="international payments" class="mil-scale-img" data-value-1="1"
-                                        data-value-2="1.2">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- features end -->
-
-            <!-- facts -->
-            <div class="mil-facts mil-p-0-130">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4 mil-sm-text-center mil-mb-30 mil-up">
-                            <p class="h1 mil-display mil-mb-15"><span class="mil-accent mil-counter"
-                                    data-number="13">13</span><span class="mil-pale">M+</span></p>
-                            <h5>Funds Processed (CAD)</h5>
-                        </div>
-                        <!-- <div class="col-xl-4 mil-sm-text-center mil-mb-30 mil-up">
-                            <p class="h1 mil-display mil-mb-15"><span class="mil-accent mil-counter"
-                                    data-number="1.6">1.6</span><span class="mil-pale">M</span></p>
-                            <h5></h5>
-                        </div> -->
-                        <div class="col-xl-4 mil-sm-text-center mil-mb-30 mil-up">
-                            <p class="h1 mil-display mil-mb-15"><span class="mil-accent mil-counter"
-                                    data-number="21">21</span><span class="mil-pale">K+</span></p>
-                            <h5>Transaction Count</h5>
-                        </div>
-                        <div class="col-xl-4 mil-sm-text-center mil-mb-30 mil-up">
-                            <p class="h1 mil-display mil-mb-15"><span class="mil-accent mil-counter"
-                                    data-number="5">5</span><span class="mil-pale">K+</span></p>
-                            <h5>User Count</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- facts end -->
-
-            <!-- call to action -->
-            <section id="benefits">
-                <div class="mil-cta mil-up">
-                    <div class="container">
-                        <div class="mil-out-frame mil-p-160-100">
-                            <div class="row justify-content-center mil-text-center">
-                                <div class="col-xl-8 mil-mb-80-adaptive-30">
-                                    <h2 class="mil-up">Why Our Users<br>Trust Us</h2>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xl-4 mil-mb-60">
-                                    <div class="mil-icon-box">
-                                        <img src="img/inner-pages/icons/1.svg" alt="send money to africa" class="mil-mb-30 mil-up">
-                                        <h5 class="mil-mb-20 mil-up">Quick Exchanges</h5>
-                                        <p class="mil-text-m mil-soft mil-up">No more frustrating
-                                            delays—swift conversions instantly.</p>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 mil-mb-60">
-                                    <div class="mil-icon-box">
-                                        <img src="./img/shield.svg" alt="naira exchange rates" class="mil-mb-30 mil-up">
-                                        <h5 class="mil-mb-20 mil-up">Guaranteed Security</h5>
-                                        <p class="mil-text-m mil-soft mil-up">Robust encryption protects your
-                                            transactions.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 mil-mb-60">
-                                    <div class="mil-icon-box">
-                                        <img src="img/inner-pages/icons/3.svg" alt="international money transfer" class="mil-mb-30 mil-up">
-                                        <h5 class="mil-mb-20 mil-up">Best Market Rates</h5>
-                                        <p class="mil-text-m mil-soft mil-up">Enjoy competitive rates with transparency,
-                                            no hidden fees.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- call to action end -->
-
-            <!-- features -->
-            <section id="values">
-                <div class="mil-features mil-p-160-80">
-                    <div class="container">
-                        <div class="row flex-sm-row-reverse justify-content-between align-items-center">
-                            <div class="col-xl-6 mil-mb-80">
-                                <h2 class="mil-mb-30 mil-up">Our Values: Trust</h2>
-                                <p class="mil-text-m mil-soft mil-mb-60 mil-up">At Ntradex, our values—ranging from
-                                    transparency to accountability—form the bedrock of our organizational culture and
-                                    reflect our steadfast commitment to our users.</p>
-                                <ul class="mil-list-2 mil-type-2">
-                                    <li>
-                                        <div class="mil-up">
-                                            <h5 class="mil-mb-15">Absolute Transparency:</h5>
-                                            <p class="mil-text-m mil-soft">Experience how transparency is woven into our
-                                                culture, offering you
-                                                clarity and confidence in every transaction.</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="mil-up">
-                                            <h5 class="mil-mb-15">Commitment to Safety</h5>
-                                            <p class="mil-text-m mil-soft">Learn about our unwavering dedication to
-                                                security, ensuring that each
-                                                transaction adheres to the highest standards of protection.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-xl-5 mil-mb-80">
-                                <div class="mil-image-frame mil-up">
-                                    <img src="img/inner-pages/2.png" alt="international money transfer" class="mil-scale-img" data-value-1="1"
-                                        data-value-2="1.2">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- features end -->
-
-            <!-- team -->
-            <!-- <div class="mil-cta mil-up">
-                <div class="container">
-                    <div class="mil-out-frame mil-visible mil-image mil-p-160-130">
-                        <div class="row justify-content-center mil-text-center">
-                            <div class="col-xl-8 mil-mb-80-adaptive-30">
-                                <h2 class="mil-light mil-up">Meet Those Who Make ntradeX Possible</h2>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-3 col-md-6 col-sm-6">
-                                <div class="mil-team-card mil-mb-30 mil-up">
-                                    <div class="mil-portrait mil-mb-30">
-                                        <img src="https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133351928-stock-illustration-default-placeholder-man-and-woman.jpg"
-                                            alt="portrait">
-                                    </div>
-                                    <h5 class="mil-light mil-mb-15">John Doe</h5>
-                                    <p class="mil-text-xs mil-soft">CEO & Founder</p>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6 col-sm-6">
-                                <div class="mil-team-card mil-mb-30 mil-up">
-                                    <div class="mil-portrait mil-mb-30">
-                                        <img src="https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133351928-stock-illustration-default-placeholder-man-and-woman.jpg"
-                                            alt="portrait">
-                                    </div>
-                                    <h5 class="mil-light mil-mb-15">Jonathan Doe</h5>
-                                    <p class="mil-text-xs mil-soft">Chief Technology Officer (CTO)</p>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6 col-sm-6">
-                                <div class="mil-team-card mil-mb-30 mil-up">
-                                    <div class="mil-portrait mil-mb-30">
-                                        <img src="https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133351928-stock-illustration-default-placeholder-man-and-woman.jpg"
-                                            alt="portrait">
-                                    </div>
-                                    <h5 class="mil-light mil-mb-15">Jane Doe</h5>
-                                    <p class="mil-text-xs mil-soft">Director of Operations (COO)</p>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6 col-sm-6">
-                                <div class="mil-team-card mil-mb-30 mil-up">
-                                    <div class="mil-portrait mil-mb-30">
-                                        <img src="https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133351928-stock-illustration-default-placeholder-man-and-woman.jpg"
-                                            alt="portrait">
-                                    </div>
-                                    <h5 class="mil-light mil-mb-15">Janet Doe</h5>
-                                    <p class="mil-text-xs mil-soft">Chief Information Security Officer (CISO)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- team -->
-
-            <!-- quote -->
-            <div class="mil-quote mil-p-160-130">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-10">
-                            <h2 class="mil-mb-30">"At ntradeX, transparency is not just a promise. It is the cornerstone
-                                of
-                                our relationship with you. We believe that trust is built with clear policies and
-                                coherent actions."</h2>
-                            <p class="mil-text-m mil-soft mil-mb-60">- ntradeX Team</p>
-                            <!-- <div class="row">
-                                <div class="col-xl-6">
-                                    <ul class="mil-list-2 mil-type-2 mil-mb-30">
-                                        <li>
-                                            <div class="mil-up">
-                                                <h5 class="mil-mb-15">Privacy policies</h5>
-                                                <p class="mil-text-m mil-soft">Your privacy is our priority. We never
-                                                    share your information with third parties without your express
-                                                    consent.</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-xl-6">
-                                    <ul class="mil-list-2 mil-type-2 mil-mb-30">
-                                        <li>
-                                            <div class="mil-up">
-                                                <h5 class="mil-mb-15">Data protection</h5>
-                                                <p class="mil-text-m mil-soft">We are committed to protecting your
-                                                    personal and financial data with the highest security measures</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- quote end -->
-
-            <!-- call to action -->
-            <div class="mil-cta mil-up">
-                <div class="container">
-                    <div class="mil-out-frame mil-p-160-160" style="background-image: url()">
-                        <div class="row justify-content-between align-items-center">
-                            <div class="col-xl-7 mil-sm-text-center">
-                                <h2 class="mil-mb-30 mil-up">Download ntradeX- enjoy zero restrictions for
-                                    international payments</h2>
-                                <p class="mil-text-m mil-mb-60 mil-dark-soft mil-up">Swap, send and receive multiple
-                                    currencies with ease.</p>
-                                <div class="mil-buttons-frame mil-up">
-                                    <a href="https://apps.apple.com/app/ntradex/id6670725661">
-                                        <img class="mil-md" width="150"
-                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/640px-Download_on_the_App_Store_Badge.svg.png" /></a>
-                                    <a href="https://play.google.com/store/apps/details?id=com.mobile.ntradex"> <img
-                                            class="mil-md" width="150"
-                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- call to action end -->
-
-            <!-- footer -->
-            <footer class="mil-p-160-0">
-                <div class="container">
-                    <div class="row">
-                        <!-- <div class="col-xl-3">
-                            <a data-path="/" class="mil-footer-logo mil-mb-60">
-                                <img src="/img/logo-dark.png" alt="ntradeX" width="150" height="32">
-                            </a>
-                        </div> -->
-                        <div class="col-xl-4 mil-mb-40">
-                            <p class="mil-text-m mil-soft">
-                                Ntradex Solutions PTY LTD is a registered and regulated Money Remitter with 
-                                the Transaction Reports and Analysis Center of Australia
-                                (AUTSRAC) with ABN ID: <b>18686511777</b>
-                            </p>
-                        </div>
-                        <div class="col-xl-2 mil-mb-60">
-                            <h6 class="mil-mb-60">Company</h6>
-                            <ul class="mil-footer-list">
-                                <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a target="_blank" href="https://blog.ntradex.ca/blogposts">Blog</a>
-                                </li>
-                                <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a target="_blank" href="https://blog.ntradex.ca/base">Knowledge Base</a>
-                                </li>
-                                <!-- <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a href="/services">Services</a>
-                                </li>
-                                <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a data-path="/contact">Contact Us</a>
-                                </li> -->
-                            </ul>
-                        </div>
-
-                        <div class="col-xl-2 mil-mb-40">
-                            <h6 class="mil-mb-60">Support</h6>
-                            <ul class="mil-footer-list">
-                                <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a href="mailto:support@ntradex.ca">Help Desk</a>
-                                </li>
-                                <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a data-path="/contact">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- <div class="col-xl-2 mil-mb-40">
-                            <h6 class="mil-mb-60">Customer</h6>
-                            <ul class="mil-footer-list">
-                                <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a href="/#testimonials">Testimonials</a>
-                                </li>
-                            </ul>
-                        </div> -->
-                        <div class="col-xl-2 mil-mb-40">
-                            <section id="community">
-                                <h6 class="mil-mb-60">Community</h6>
-                                <ul class="mil-footer-list">
-                                    <li class="mil-text-m mil-soft mil-mb-15">
-                                        <a href="https://www.linkedin.com/company/ntradex-inc/">LinkedIn</a>
-                                    </li>
-                                    <li class="mil-text-m mil-soft mil-mb-15">
-                                        <a
-                                            href="https://web.facebook.com/people/Ntradex-Inc/61553455678224/">Facebook</a>
-                                    </li>
-                                    <li class="mil-text-m mil-soft mil-mb-15">
-                                        <a href="https://x.com/ntradex_">(X) formerly Twitter</a>
-                                    </li>
-                                </ul>
-                            </section>
-                        </div>
-                        <div class="col-xl-2 mil-mb-40">
-                            <h6 class="mil-mb-60">Legal</h6>
-                            <ul class="mil-footer-list">
-                                <!-- <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a href="/about#benefits">Our Benefit</a>
-                                </li>
-                                <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a href="/about#vision">Our Vision</a>
-                                </li>
-                                <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a href="/about#values">Our Values</a>
-                                </li> -->
-                                <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a data-path="/terms">Terms</a>
-                                </li>
-                                <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a data-path="/privacy">Privacy</a>
-                                </li>
-                                <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a data-path="/aml-policy">AML Policy</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- <div class="col-xl-2 mil-mb-40">
-                            <h6 class="mil-mb-60">Learn</h6>
-                            <ul class="mil-footer-list">
-                                <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a href="">Blog</a>
-                                </li>
-                                <li class="mil-text-m mil-soft mil-mb-15">
-                                    <a href="">Knowledge Base</a>
-                                </li>
-                            </ul>
-                        </div> -->
-                        <!-- <div class="col-xl-3 mil-mb-80">
-                            <h6 class="mil-mb-60">Newsletter</h6>
-                            <p class="mil-text-xs mil-soft mil-mb-15">Subscribe to get the latest news form us</p>
-                            <p id="newsletter_alert" class="mil-text-xs mil-soft mil-mb-15" style="display: none;">
-                                Thanks, your message is sent successfully
-                            </p>
-                            <form id="newsletterForm" class="mil-subscripe-form-footer">
-                                <input class="mil-input" id="newsletter_email" required type="email"
-                                    placeholder="Email">
-                                <button type="submit"><i class="far fa-envelope-open mil-dark"></i></button>
-                                <div class="mil-checkbox-frame mil-mt-15">
-                                    <div class="mil-checkbox">
-                                        <input type="checkbox" id="checkbox" checked>
-                                        <label for="checkbox"></label>
-                                    </div>
-                                    <p class="mil-text-xs mil-soft">Subscribe to get the latest news</p>
-                                </div>
-                            </form>
-                        </div> -->
-                    </div>
-                    <div class="mil-footer-bottom">
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <p class="mil-text-s mil-soft">© 2026 Ntradex, Inc. All right reserved</p>
-                            </div>
-                            <!-- <div class="col-xl-6">
-                                <p class="mil-text-s mil-text-right mil-sm-text-left mil-soft">Developed by <a
-                                        href="https://byt.vercel.app/" target="blank">Byt</a></p>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!-- footer end -->
-
-        </div>
-        <!-- content end -->
+      </li>
+    </ul>
+    <div class="nx-nav-ctas">
+      <a href="https://business.ntradex.ca/login" class="nx-nav-login">Login</a>
+      <a href="/personal#get-started" data-path="/personal#get-started" class="nx-btn nx-btn-primary nx-btn-sm">Get Started</a>
+      <div class="nx-region-selector" id="nx-region-selector">
+        <div id="default-country" class="nx-region-btn" role="button" aria-label="Select region" aria-expanded="false"></div>
+      </div>
     </div>
-    <!-- wrapper end -->
+    <button class="nx-hamburger" id="nx-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-    <!-- jquery js -->
-    <script src="/js/plugins/jquery.min.js"></script>
+<!-- Mobile Menu -->
+<div class="nx-mobile-menu" id="nx-mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <a href="/personal" data-path="/personal">Personal</a>
+  <a href="/business" data-path="/business">Business</a>
+  <a href="/services" data-path="/services">Services</a>
+  <a href="/about" data-path="/about">About</a>
+  <a href="/contact" data-path="/contact">Contact</a>
+  <div style="margin-top:8px;padding-top:8px;border-top:1px solid #eef1f5;">
+    <p style="font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#72a1c3;margin:12px 0 8px;">Company</p>
+    <a target="_blank" href="https://blog.ntradex.ca/blogposts">Blog</a>
+    <a target="_blank" href="https://blog.ntradex.ca/base">Knowledge Base</a>
+  </div>
+  <div class="nx-mobile-menu-ctas">
+    <a href="https://business.ntradex.ca/login" class="nx-btn nx-btn-outline" style="width:100%;justify-content:center;">Log In</a>
+    <a href="/personal#get-started" data-path="/personal#get-started" class="nx-btn nx-btn-primary" style="width:100%;justify-content:center;">Get Started — It's Free</a>
+  </div>
+</div>
 
-    <!-- swiper css -->
-    <script src="/js/plugins/swiper.min.js"></script>
-    <!-- gsap js -->
-    <script src="/js/plugins/gsap.min.js"></script>
-    <!-- scroll smoother -->
-    <script src="/js/plugins/ScrollSmoother.min.js"></script>
-    <!-- scroll trigger js -->
-    <script src="/js/plugins/ScrollTrigger.min.js"></script>
-    <!-- scroll to js -->
-    <script src="/js/plugins/ScrollTo.min.js"></script>
-    <!-- magnific -->
-    <script src="/js/plugins/magnific-popup.js"></script>
-    <!-- ntradeX js -->
-    <script src="/js/main.js"></script>
-    <script src="/js/links.js"></script>
+<!-- PAGE HERO -->
+<!-- ── Hero ── -->
+<section class="nx-about-hero">
+  <div class="nx-container">
+    <div class="nx-about-hero-inner" data-nx-reveal>
+      <div class="nx-eyebrow"><i class="fas fa-globe"></i> Our Story</div>
+      <h1>An ecosystem connecting <span>people and businesses to markets</span></h1>
+      <p>Ntradex is a global cross-border payments network built for individuals and businesses to move funds freely and securely. With roots in Africa, we've spent nearly a decade simplifying financial transactions across multiple currencies and markets, serving our global community of customers.</p>
+      <div class="nx-about-hero-stats">
+        <div class="nx-about-hero-stat">
+          <strong>2017</strong>
+          <span>Year founded</span>
+        </div>
+        <div class="nx-about-hero-stat">
+          <strong>80+</strong>
+          <span>Countries reached</span>
+        </div>
+        <div class="nx-about-hero-stat">
+          <strong>4,800+</strong>
+          <span>Active corridors</span>
+        </div>
+        <div class="nx-about-hero-stat">
+          <strong>AUSTRAC</strong>
+          <span>Regulated in Australia</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Contact Us -->
-    <script src="/js/function.js"></script>
+<!-- ── Mission & Vision ── -->
+<section class="nx-mission">
+  <div class="nx-container">
+    <div class="nx-mission-grid">
+      <div class="nx-mission-text" data-nx-reveal>
+        <span class="nx-section-label">Mission &amp; Vision</span>
+        <h2>Built to localize international payments for everyone</h2>
+        <p>Our mission is to provide fast, reliable currency exchange and remittance services that support the financial success of immigrants, travelers, and businesses alike.</p>
+        <p>Our vision is to localize international payments for immigrants and businesses globally removing the friction, opacity, and cost that has long made cross-border transactions feel punishing rather than routine.</p>
+        <p>We started as a simple currency exchange service for immigrants remitting funds home. That experience taught us everything about what people actually need: speed, accuracy, and complete transparency about every cent. That clarity still drives every product decision we make.</p>
+      </div>
+      <div class="nx-mission-visual" data-nx-reveal data-nx-delay="150">
+        <div class="nx-mission-pill">
+          <i class="fas fa-bolt"></i>
+          <div class="nx-mission-pill-text">
+            <strong>Speed over legacy</strong>
+            <span>Our rail and processors ensure transactions are completed in real-time — not 3–5 business days.</span>
+          </div>
+        </div>
+        <div class="nx-mission-pill">
+          <i class="fas fa-crosshairs"></i>
+          <div class="nx-mission-pill-text">
+            <strong>Precision in every transaction</strong>
+            <span>Accurate handling and exact conversions without errors, every single time.</span>
+          </div>
+        </div>
+        <div class="nx-mission-pill">
+          <i class="fas fa-eye"></i>
+          <div class="nx-mission-pill-text">
+            <strong>Full transparency</strong>
+            <span>Clear rates and fees with full visibility into every transaction. No surprises.</span>
+          </div>
+        </div>
+        <div class="nx-mission-pill">
+          <i class="fas fa-expand-arrows-alt"></i>
+          <div class="nx-mission-pill-text">
+            <strong>Built to scale</strong>
+            <span>API-first architecture for fintech platforms and businesses processing high-volume payments.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- ── Story Timeline ── -->
+<section class="nx-story">
+  <div class="nx-container">
+    <div class="nx-story-inner">
+      <h2 data-nx-reveal>How we got here</h2>
+      <p class="nx-lead" data-nx-reveal data-nx-delay="100">From a single immigrant remittance corridor in Africa to a global cross-border payments powerhouse — the Ntradex story.</p>
+      <div class="nx-timeline">
+        <div class="nx-tl-item" data-nx-reveal>
+          <div class="nx-tl-dot"></div>
+          <span class="nx-tl-year">2017</span>
+          <h3>Founded in Africa</h3>
+          <p>Ntradex Solutions LTD was founded with a focused purpose: give immigrants a faster, fairer way to remit funds to destination countries. We started with a small set of corridors and a clear understanding of what fragmented markets actually need.</p>
+        </div>
+        <div class="nx-tl-item" data-nx-reveal data-nx-delay="80">
+          <div class="nx-tl-dot"></div>
+          <span class="nx-tl-year">2020</span>
+          <h3>Expansion into North America</h3>
+          <p>We brought Ntradex to Canada, establishing our North American headquarters and gaining the local banking relationships, regulatory standing, and corridor infrastructure needed to serve the African diaspora community at scale.</p>
+        </div>
+        <div class="nx-tl-item" data-nx-reveal data-nx-delay="160">
+          <div class="nx-tl-dot"></div>
+          <span class="nx-tl-year">2023</span>
+          <h3>FINTRAC &amp; Bank of Canada RPAA compliance</h3>
+          <p>Registered as a Money Services Business with FINTRAC (ID: C10001380) and completed registration under the Retail Payment Activities Act with the Bank of Canada — one of the first wave of fintechs to achieve this. A clear signal to banking partners that Ntradex operates to the highest Canadian regulatory standard.</p>
+        </div>
+        <div class="nx-tl-item" data-nx-reveal data-nx-delay="240">
+          <div class="nx-tl-dot"></div>
+          <span class="nx-tl-year">2024</span>
+          <h3>Launched ntradeX v2</h3>
+          <p>Scaled our company and recruited a skilled team to launch an ehanced version of the product. Automated collections and payouts for major currencies in our network. Solidied our footing in North America.</p>
+        </div>
+        <div class="nx-tl-item" data-nx-reveal data-nx-delay="320">
+          <div class="nx-tl-dot"></div>
+          <span class="nx-tl-year">2025</span>
+          <h3>Business platform &amp; API launch</h3>
+          <p>Released the Ntradex Business product — dedicated dashboard, batch payment tools, and REST API. Designed for fintech platforms, import/export firms, and money transmitters requiring programmatic payment flows and full treasury control.</p>
+        </div>
+        <div class="nx-tl-item" data-nx-reveal data-nx-delay="400">
+          <div class="nx-tl-dot"></div>
+          <span class="nx-tl-year">2026</span>
+          <h3>80+ countries, 4,800+ corridors</h3>
+          <p>Expanding deeper into fragmented markets while scaling our presence in the Global North. The infrastructure is proven. The growth phase is now.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Values ── -->
+<section class="nx-values">
+  <div class="nx-container">
+    <div class="nx-values-header" data-nx-reveal>
+      <h2>What we stand for</h2>
+      <p>Three core principles have guided how we operate since day one — and three more shape how we build for the future.</p>
+    </div>
+    <div class="nx-values-grid">
+      <div class="nx-value-card" data-nx-reveal>
+        <div class="nx-value-icon"><i class="fas fa-bolt"></i></div>
+        <h3>Speed</h3>
+        <p>Our rails and processors ensure transactions complete in real-time. Every hour a payment sits in transit is a cost to the sender and the recipient. We optimize every corridor for delivery time, not just cost.</p>
+      </div>
+      <div class="nx-value-card" data-nx-reveal data-nx-delay="80">
+        <div class="nx-value-icon"><i class="fas fa-crosshairs"></i></div>
+        <h3>Precision</h3>
+        <p>Our systems ensure accurate transaction handling and exact currency conversions without errors. When we quote a rate, that is the rate. No adjustments after the fact, no rounding in our favour.</p>
+      </div>
+      <div class="nx-value-card" data-nx-reveal data-nx-delay="160">
+        <div class="nx-value-icon"><i class="fas fa-eye"></i></div>
+        <h3>Transparency</h3>
+        <p>We are clear about our rates and fees, providing full visibility into every transaction. What you see is exactly what your recipient gets — no hidden charges buried in the exchange rate.</p>
+      </div>
+      <div class="nx-value-card" data-nx-reveal data-nx-delay="80">
+        <div class="nx-value-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Compliance as infrastructure</h3>
+        <p>Regulation is the foundation, not overhead. We invest in AML/CFT, KYC/KYB, and licensing so our customers and partners inherit a compliant payment layer automatically.</p>
+      </div>
+      <div class="nx-value-card" data-nx-reveal data-nx-delay="160">
+        <div class="nx-value-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h3>Local knowledge, global reach</h3>
+        <p>We build African corridors with the people who actually understand Nigerian FX markets, Kenyan banking rails, and Ghanaian compliance requirements. Ground-level knowledge is not optional — it's the product.</p>
+      </div>
+      <div class="nx-value-card" data-nx-reveal data-nx-delay="240">
+        <div class="nx-value-icon"><i class="fas fa-users"></i></div>
+        <h3>Humans behind the platform</h3>
+        <p>Technology moves fast, but businesses and individuals need people. Every account gets access to a team — not just a chatbot — when something matters.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Compliance ── -->
+<section class="nx-about-compliance">
+  <div class="nx-container">
+    <div class="nx-about-compliance-inner">
+      <div class="nx-about-compliance-text" data-nx-reveal>
+        <h2>Regulated. Audited. Trusted.</h2>
+        <p>We hold the licences that matter in Australia, one of the strictest jurisdiction we operate in. Every transfer processed by Ntradex sits inside a compliance framework that satisfies Australia's AUSTRAC and international AML/CFT standards.</p>
+        <p>Our compliance infrastructure isn't just for us. When your business or platform sends payments through Ntradex, you inherit that framework automatically.</p>
+        <a href="/compliance" data-path="/compliance">Read our full compliance overview <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="nx-compliance-badge-grid" data-nx-reveal data-nx-delay="150">
+        <div class="nx-cbadge">
+          <i class="fas fa-certificate"></i>
+          <div>
+            <strong>AUSTRAC Money Remitter</strong>
+            <span>Ntradex Solutions PTY LTD is a registered and regulated Money Remitter with AUSTRAC — ABN: 18 686 511 777</span>
+          </div>
+        </div>
+        <div class="nx-cbadge">
+          <i class="fas fa-university"></i>
+          <div>
+            <strong>Privacy Act 1988</strong>
+            <span>Customer data is handled in accordance with the Privacy Act 1988 (Cth)</span>
+          </div>
+        </div>
+        <div class="nx-cbadge">
+          <i class="fas fa-search"></i>
+          <div>
+            <strong>AML/CFT Programme</strong>
+            <span>Full Anti-Money Laundering &amp; Counter-Terrorist Financing controls</span>
+          </div>
+        </div>
+        <div class="nx-cbadge">
+          <i class="fas fa-user-check"></i>
+          <div>
+            <strong>KYC / KYB</strong>
+            <span>Identity verification for individuals and business entities at onboarding</span>
+          </div>
+        </div>
+        <div class="nx-cbadge">
+          <i class="fas fa-shield-alt"></i>
+          <div>
+            <strong>OAIC Compliant</strong>
+            <span>All personal data is handled in compliance with OAIC</span>
+          </div>
+        </div>
+        <div class="nx-cbadge">
+          <i class="fas fa-exchange-alt"></i>
+          <div>
+            <strong>Transaction Monitoring</strong>
+            <span>Automated screening against OFAC, UN, and Canadian sanctions lists</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Where we operate ── -->
+<section class="nx-where">
+  <div class="nx-container">
+    <div class="nx-where-header" data-nx-reveal>
+      <h2>Where we operate</h2>
+      <p>Active corridors across Africa, the Global North, and growing. Every market is live with dedicated banking partnerships and local compliance.</p>
+    </div>
+    <div class="nx-where-grid">
+      <div class="nx-where-card" data-nx-reveal>
+        <span class="nx-where-flag"><img src="img/Flag_of_Canada.svg.png" alt="Canada" style="width:2.2rem;height:auto;"></span>
+        <h3>Canada</h3>
+        <p>Headquarters. FINTRAC &amp; RPAA regulated. Send and receive across all active corridors.</p>
+      </div>
+      <div class="nx-where-card" data-nx-reveal data-nx-delay="60">
+        <span class="nx-where-flag"><img src="img/Flag_of_Nigeria.svg" alt="Nigeria" style="width:2.2rem;height:auto;"></span>
+        <h3>Nigeria</h3>
+        <p>Tier-1 corridor. NGN send &amp; receive with same-day delivery on CAD, USD, and GBP flows.</p>
+      </div>
+      <div class="nx-where-card" data-nx-reveal data-nx-delay="120">
+        <span class="nx-where-flag"><img src="img/Flag_of_Aus.png" alt="Australia" style="width:2.2rem;height:auto;"></span>
+        <h3>Australia</h3>
+        <p>AUD corridors to Ghana and Nigeria. Fast settlement via NPP banking rails.</p>
+      </div>
+      <div class="nx-where-card" data-nx-reveal data-nx-delay="180">
+        <span class="nx-where-flag"><img src="img/Flag_of_the_United_Kingdom.svg.png" alt="United Kingdom" style="width:2.2rem;height:auto;"></span>
+        <h3>United Kingdom</h3>
+        <p>GBP receive for Kenya corridor. Faster Payments rails for same-day GBP delivery.</p>
+      </div>
+      <div class="nx-where-card" data-nx-reveal data-nx-delay="60">
+        <span class="nx-where-flag"><img src="img/Flag_of_Ghana.png" alt="Ghana" style="width:2.2rem;height:auto;"></span>
+        <h3>Ghana</h3>
+        <p>GHS corridors active. Serving import/export businesses and diaspora flows from Australia and Canada.</p>
+      </div>
+      <div class="nx-where-card" data-nx-reveal data-nx-delay="120">
+        <span class="nx-where-flag"><img src="img/Flag_of_Kenya.png" alt="Kenya" style="width:2.2rem;height:auto;"></span>
+        <h3>Kenya</h3>
+        <p>KES corridors active. M-Pesa integration for last-mile delivery. UK and Canada send lanes open.</p>
+      </div>
+      <div class="nx-where-card" data-nx-reveal data-nx-delay="180">
+        <span class="nx-where-flag"><img src="img/Flag_of_the_United_States.svg.png" alt="United States" style="width:2.2rem;height:auto;"></span>
+        <h3>United States</h3>
+        <p>USD send to Nigeria. Serving US-based diaspora and Nigerian import/export businesses.</p>
+      </div>
+      <div class="nx-where-card" data-nx-reveal data-nx-delay="240">
+        <span class="nx-where-flag">🌍</span>
+        <h3>Also available in</h3>
+        <p>South Africa, Uganda, Tanzania and many more countries.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="nx-about-cta">
+  <div class="nx-container">
+    <div class="nx-about-cta-inner" data-nx-reveal>
+      <h2>Ready to move money the right way?</h2>
+      <p>Whether you're sending money home, running a cross-border business, or looking for a payment API partner — Ntradex was built for you.</p>
+      <div class="nx-about-cta-btns">
+        <a href="/personal#get-started" data-path="/personal#get-started" class="nx-btn nx-btn-primary nx-btn-lg">Create a free account</a>
+        <a href="/contact?type=business" data-path="/contact?type=business" class="nx-btn nx-btn-outline nx-btn-lg">Talk to our team</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════ -->
+<footer class="nx-footer" role="contentinfo">
+  <div class="nx-container">
+    <div class="nx-footer-grid">
+
+      <!-- Brand col -->
+      <div class="nx-footer-brand">
+        <a href="/" data-path="/" aria-label="Ntradex — Home">
+          <img src="img/logo-light.png" alt="Ntradex" style="height:28px;width:auto;" />
+        </a>
+        <p>Ntradex Solutions PTY LTD is a registered and regulated Money Remitter with the Australian Transaction Reports and Analysis Centre (AUSTRAC). ABN: 18 686 511 777.</p>
+        <div class="nx-footer-socials">
+          <a href="https://twitter.com/ntradex" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/ntradex" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/ntradex" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/ntradex" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <!-- Personal -->
+      <div class="nx-footer-col">
+        <h6>Personal</h6>
+        <ul>
+          <li><a href="/personal" data-path="/personal">Send Money</a></li>
+          <li><a href="/personal#receive" data-path="/personal#receive">Receive Funds</a></li>
+          <li><a href="/personal#rates" data-path="/personal#rates">Exchange Rates</a></li>
+          <li><a href="/personal#app" data-path="/personal#app">Download App</a></li>
+        </ul>
+      </div>
+
+      <!-- Business -->
+      <div class="nx-footer-col">
+        <h6>Business</h6>
+        <ul>
+          <li><a href="/business" data-path="/business">Business Payments</a></li>
+          <li><a href="/business#api" data-path="/business#api">API Integrations</a></li>
+          <li><a href="/business#fx" data-path="/business#fx">FX Management</a></li>
+          <li><a href="/business#bulk" data-path="/business#bulk">Bulk Payments</a></li>
+          <li><a href="/contact?type=business" data-path="/contact?type=business">Talk to Sales</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="nx-footer-col">
+        <h6>Company</h6>
+        <ul>
+          <li><a href="/about" data-path="/about">About Ntradex</a></li>
+          <li><a href="compliance">Compliance</a></li>
+          <li><a href="/services" data-path="/services">All Services</a></li>
+          <li><a href="/contact" data-path="/contact">Contact Us</a></li>
+          <li><a target="_blank" href="https://blog.ntradex.ca/blogposts">Blog</a></li>
+          <li><a target="_blank" href="https://blog.ntradex.ca/base">Knowledge Base</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="nx-footer-bottom">
+      <p>&copy; 2023–2026 Ntradex, Inc. FINTRAC MSB &amp; Bank of Canada RPAA registered.</p>
+      <div class="nx-footer-bottom-links">
+        <a href="/privacy" data-path="/privacy">Privacy</a>
+        <a href="/terms" data-path="/terms">Terms</a>
+        <a href="/aml-policy" data-path="/aml-policy">AML Policy</a>
+        <a href="/compliance" data-path="/compliance">Compliance</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Zendesk -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=ab55e257-a5b0-4c54-b58f-f78d7d19606f" async></script>
+
+<!-- Region Selector -->
+<script src="js/links.js"></script>
+
+<!-- Ntradex Core JS -->
+<script>
+(function () {
+  'use strict';
+
+  /* ── Nav scroll state ── */
+  var nav = document.getElementById('nx-nav');
+  if (nav) {
+    window.addEventListener('scroll', function () {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  }
+
+  /* ── Mobile menu ── */
+  var hamburger = document.getElementById('nx-hamburger');
+  var mobileMenu = document.getElementById('nx-mobile-menu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', function () {
+      var isOpen = mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen.toString());
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    mobileMenu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  /* ── Desktop dropdown toggle ── */
+  document.querySelectorAll('.nx-nav-item').forEach(function (item) {
+    var trigger = item.querySelector(':scope > a');
+    var dropdown = item.querySelector('.nx-dropdown');
+    if (!trigger || !dropdown) return;
+
+    trigger.addEventListener('click', function (e) {
+      var isOpen = item.classList.contains('open');
+
+      document.querySelectorAll('.nx-nav-item.open').forEach(function (other) {
+        if (other !== item) other.classList.remove('open');
+      });
+
+      if (isOpen) {
+        item.classList.remove('open');
+        if (trigger.getAttribute('href') === '#') e.preventDefault();
+      } else {
+        e.preventDefault();
+        item.classList.add('open');
+      }
+    });
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.nx-nav-item')) {
+      document.querySelectorAll('.nx-nav-item.open').forEach(function (item) {
+        item.classList.remove('open');
+      });
+    }
+  });
+
+  /* ── Region Selector Toggle ── */
+  (function () {
+    var sel = document.getElementById('nx-region-selector');
+    var btn = document.getElementById('default-country');
+    if (!sel || !btn) return;
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = sel.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', function () {
+      sel.classList.remove('open');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+    });
+  })();
+
+  /* ── Scroll-reveal ── */
+  if ('IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var delay = parseInt(entry.target.dataset.nxDelay || 0);
+          setTimeout(function () {
+            entry.target.classList.add('revealed');
+          }, delay);
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('[data-nx-reveal]').forEach(function (el) {
+      revealObserver.observe(el);
+    });
+  } else {
+    document.querySelectorAll('[data-nx-reveal]').forEach(function (el) {
+      el.classList.add('revealed');
+    });
+  }
+
+})();
+</script>
 </body>
-
-
 </html>

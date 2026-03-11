@@ -2,81 +2,61 @@
     "version": 2,
     "builds": [
         {
-            "src": "api/**/*.js",
-            "use": "@vercel/node"
-        },
-        {
             "src": "public/**/*",
             "use": "@vercel/static"
         }
     ],
 
     "routes": [
+        { "src": "/robots\\.txt$", "dest": "/public/robots.txt" },
+        { "src": "/sitemap\\.xml$", "dest": "/public/sitemap.xml" },
+
         { "src": "/css/(.*)", "dest": "/public/css/$1" },
         { "src": "/js/(.*)", "dest": "/public/js/$1" },
         { "src": "/fonts/(.*)", "dest": "/public/fonts/$1" },
         { "src": "/img/(.*)", "dest": "/public/img/$1" },
-        {
-        "src": "/([a-z]{2,3})/css/(.*)",
-        "dest": "/public/css/$2"
-        },
-        {
-        "src": "/([a-z]{2,3})/js/(.*)",
-        "dest": "/public/js/$2"
-        },
-        {
-        "src": "/([a-z]{2,3})/fonts/(.*)",
-        "dest": "/public/fonts/$2"
-        },
-        {
-        "src": "/([a-z]{2,3})/img/(.*)",
-        "dest": "/public/img/$2"
-        },
+
+        { "src": "/personal$", "dest": "/public/personal.html" },
+        { "src": "/business$", "dest": "/public/business.html" },
+        { "src": "/services$", "dest": "/public/services.html" },
+        { "src": "/about$", "dest": "/public/about.html" },
+        { "src": "/contact$", "dest": "/public/contact.html" },
+        { "src": "/privacy$", "dest": "/public/privacy.html" },
+        { "src": "/terms$", "dest": "/public/terms.html" },
+        { "src": "/aml-policy$", "dest": "/public/aml-policy.html" },
+        { "src": "/compliance$", "dest": "/public/compliance.html" },
 
         {
-        "src": "/([a-z]{2,3})/([^/]+)",
-        "dest": "/public/regions/$1/$2.html"
+            "src": "/([a-z]{2,3})/css/(.*)",
+            "dest": "/public/css/$2"
         },
         {
-        "src": "/([a-z]{2,3})",
-        "dest": "/public/regions/$1/index.html"
+            "src": "/([a-z]{2,3})/js/(.*)",
+            "dest": "/public/js/$2"
         },
         {
-            "src": "/api/(.*)",
-            "dest": "/api/$1"
+            "src": "/([a-z]{2,3})/fonts/(.*)",
+            "dest": "/public/fonts/$2"
         },
         {
-            "src": "/privacy",
-            "dest": "/public/privacy.html"
+            "src": "/([a-z]{2,3})/img/(.*)",
+            "dest": "/public/img/$2"
         },
         {
-            "src": "/sitemap.xml",
-            "dest": "/public/sitemap.xml"
+            "src": "/([a-z]{2,3})/sitemap\\.xml$",
+            "dest": "/public/regions/$1/sitemap.xml"
         },
         {
-            "src": "/terms",
-            "dest": "/public/terms.html"
+            "src": "/([a-z]{2,3})/([^/]+)$",
+            "dest": "/public/regions/$1/$2.html"
         },
         {
-            "src": "/aml-policy",
-            "dest": "/public/aml-policy.html"
-        },
-        {
-            "src": "/about",
-            "dest": "/public/about.html"
-        },
-        {
-            "src": "/services",
-            "dest": "/public/services.html"
-        },
-        {
-            "src": "/contact",
-            "dest": "/public/contact.html"
+            "src": "/([a-z]{2,3})$",
+            "dest": "/public/regions/$1/index.html"
         },
         {
             "src": "/",
             "dest": "/public/index.html"
         }
-       
     ]
 }

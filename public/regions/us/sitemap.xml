@@ -5,47 +5,58 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+<!-- US region pages -->
+  <url>
+    <loc>https://ntradex.ca/us</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.85</priority>
+  </url>
 
-<url>
-  <loc>https://ntradex.ca/</loc>
-  <lastmod>2024-12-04T09:16:52+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://ntradex.ca/about</loc>
-  <lastmod>2024-12-04T15:43:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ntradex.ca/contact</loc>
-  <lastmod>2024-12-04T15:43:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ntradex.ca/terms</loc>
-  <lastmod>2024-12-04T15:43:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ntradex.ca/privacy</loc>
-  <lastmod>2024-12-04T15:43:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ntradex.ca/aml-policy</loc>
-  <lastmod>2024-12-04T15:43:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://blog.ntradex.ca/blogposts</loc>
-  <lastmod>2024-12-04T15:43:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://blog.ntradex.ca/base</loc>
-  <lastmod>2024-12-04T15:43:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
+<!-- US sub-pages -->
+  <url>
+    <loc>https://ntradex.ca/us/personal</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://ntradex.ca/us/business</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://ntradex.ca/us/services</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://ntradex.ca/us/about</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://ntradex.ca/us/contact</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://ntradex.ca/us/compliance</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://ntradex.ca/us/terms</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.45</priority>
+  </url>
+  <url>
+    <loc>https://ntradex.ca/us/privacy</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.45</priority>
+  </url>
+  <url>
+    <loc>https://ntradex.ca/us/aml-policy</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.45</priority>
+  </url>
 
 </urlset>

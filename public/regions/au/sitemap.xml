@@ -5,47 +5,58 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+<!-- AU region pages -->
+  <url>
+    <loc>https://ntradex.ca/au</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.85</priority>
+  </url>
 
-<url>
-  <loc>https://ntradex.ca/au/</loc>
-  <lastmod>2024-12-04T09:16:52+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://ntradex.ca/au/about</loc>
-  <lastmod>2024-12-04T15:43:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ntradex.ca/au/contact</loc>
-  <lastmod>2024-12-04T15:43:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ntradex.ca/au/terms</loc>
-  <lastmod>2024-12-04T15:43:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ntradex.ca/au/privacy</loc>
-  <lastmod>2024-12-04T15:43:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ntradex.ca/au/aml-policy</loc>
-  <lastmod>2024-12-04T15:43:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://blog.ntradex.ca/blogposts</loc>
-  <lastmod>2024-12-04T15:43:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://blog.ntradex.ca/base</loc>
-  <lastmod>2024-12-04T15:43:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
+<!-- AU sub-pages -->
+  <url>
+    <loc>https://ntradex.ca/au/personal</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://ntradex.ca/au/business</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://ntradex.ca/au/services</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://ntradex.ca/au/about</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://ntradex.ca/au/contact</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://ntradex.ca/au/compliance</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://ntradex.ca/au/terms</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.45</priority>
+  </url>
+  <url>
+    <loc>https://ntradex.ca/au/privacy</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.45</priority>
+  </url>
+  <url>
+    <loc>https://ntradex.ca/au/aml-policy</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.45</priority>
+  </url>
 
 </urlset>

@@ -7,107 +7,67 @@ const axios = require('axios');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Serve static files (HTML, CSS, JS)
-// app.use(express.static('public'));
-// app.use('/:region', express.static('public'));
-
-const getPathForRegion = (region, page) => {
-  ALLOWED_REGIONS = ["au", "ng", "gb", "us"]
-
-  const isRegion = ALLOWED_REGIONS.includes(region);
-  const resolvedPage = page || "index"
-  console.log(" page", page)
-  console.log("resolved page", resolvedPage)
-   console.log('isRegion',isRegion)
-
-  const filePath = isRegion
-    ? path.join(__dirname, "public", "regions", region, `${resolvedPage}.html`)
-    : path.join(__dirname, "public", `${resolvedPage}.html`);
-
-    console.log("file path", filePath)
-    
-  return filePath
-}
-
-
-
-const siteRouter = express.Router();
-
-siteRouter.get("/", (_, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
-});
-
-siteRouter.get("/:region(au|us|gb|ng|eu)/:page?", (req, res, next) => {
-  const { region, page} = req.params;
-  
-  res.sendFile(getPathForRegion(region, page));
-});
-siteRouter.get("/:region(au|us|gb|ng|eu)/", (req, res, next) => {
-  const { region } = req.params;
-
-  res.sendFile(getPathForRegion(region, page));
-});
-
-siteRouter.get("/:page", (req, res, next) => {
-  const { page} = req.params;
-  const region = null
- 
-  res.sendFile(getPathForRegion(region, page));
-});
-
-
-
-
-
-
-
-// siteRouter.get("/:region?/services", (req, res) => {
-//   res.sendFile(getPathForRegion(region, "services"))
-// });
-
-// siteRouter.get("/:region?/contact", (req, res) => {
-//     console.log("contact")
-//   res.sendFile(getPathForRegion(region, "contact"))
-// });
-
-// siteRouter.get("/:region?/privacy", (req, res) => {
-//   res.sendFile(path.join(__dirname, "public", "privacy.html"));
-// });
-
-// siteRouter.get("/:region?/terms", (req, res) => {
-//   res.sendFile(path.join(__dirname, "public", "terms.html"));
-// });
-
-// siteRouter.get("/:region?/aml-policy", (req, res) => {
-//   res.sendFile(path.join(__dirname, "public", "aml-policy.html"));
-// });
-
-// siteRouter.get("/:region?/sitemap.xml", (req, res) => {
-//   res.sendFile(path.join(__dirname, "public", "sitemap.xml"));
-// });
-
+// Static assets (CSS, JS, images, fonts, etc.) — served before any route logic
 app.use(
-  express.static(path.join(__dirname, "public"), {
-    index: false, 
-    extensions: ["js", "css", "svg", "png"]
+  express.static(path.join(__dirname, 'public'), {
+    index: false,
+    extensions: ['js', 'css', 'svg', 'png', 'jpg', 'jpeg', 'ico', 'woff', 'woff2', 'ttf']
   })
 );
-app.use("/:region", express.static(path.join(__dirname, "public"),
-{
-    index: false, 
-    extensions: ["js", "css", "svg", "png"]
-  }));
 
+const ALLOWED_REGIONS = ['au', 'ng', 'gb', 'us', 'ca', 'gh', 'ke', 'cn', 'sg', 'dk', 'de'];
 
-app.use("/", siteRouter);
+// Named top-level pages
+const PAGE_MAP = {
+  'personal':    'personal.html',
+  'business':    'business.html',
+  'services':    'services.html',
+  'about':       'about.html',
+  'contact':     'contact.html',
+  'privacy':     'privacy.html',
+  'terms':       'terms.html',
+  'aml-policy':  'aml-policy.html',
+  'compliance':  'compliance.html',
+  'sitemap.xml': 'sitemap.xml'
+};
 
+// Root
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
-// Start the server
+// Named pages (/personal, /business, etc.) AND region index pages (/ng, /ca, etc.)
+app.get('/:segment', (req, res, next) => {
+  const seg = req.params.segment;
+
+  if (PAGE_MAP[seg]) {
+    return res.sendFile(path.join(__dirname, 'public', PAGE_MAP[seg]));
+  }
+
+  if (ALLOWED_REGIONS.includes(seg)) {
+    return res.sendFile(path.join(__dirname, 'public', 'regions', seg, 'index.html'));
+  }
+
+  next();
+});
+
+// Region sub-pages (/ng/services, /ca/about, etc.)
+app.get('/:region/:page', (req, res, next) => {
+  const { region, page } = req.params;
+  if (!ALLOWED_REGIONS.includes(region)) return next();
+  const filePath = path.join(__dirname, 'public', 'regions', region, `${page}.html`);
+  res.sendFile(filePath, err => { if (err) next(); });
+});
+
+// 404 fallback
+app.use((req, res) => {
+  res.status(404).sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });

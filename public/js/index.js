@@ -11,7 +11,7 @@ const countries = [
     code: 'NGN',
     currency: 'Naira',
     name: 'NGN - Nigeria',
-    image: 'img/Flag_of_Nigeria.png',
+    image: 'img/Flag_of_Nigeria.svg',
     path:  "ng"
   },
   {
