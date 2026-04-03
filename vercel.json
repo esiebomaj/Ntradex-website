@@ -27,31 +27,31 @@
         { "src": "/compliance$", "dest": "/public/compliance.html" },
 
         {
-            "src": "/([a-z]{2,3})/css/(.*)",
+            "src": "/([a-z]{2,3}(?:-[a-z]{2,3})?)/css/(.*)",
             "dest": "/public/css/$2"
         },
         {
-            "src": "/([a-z]{2,3})/js/(.*)",
+            "src": "/([a-z]{2,3}(?:-[a-z]{2,3})?)/js/(.*)",
             "dest": "/public/js/$2"
         },
         {
-            "src": "/([a-z]{2,3})/fonts/(.*)",
+            "src": "/([a-z]{2,3}(?:-[a-z]{2,3})?)/fonts/(.*)",
             "dest": "/public/fonts/$2"
         },
         {
-            "src": "/([a-z]{2,3})/img/(.*)",
+            "src": "/([a-z]{2,3}(?:-[a-z]{2,3})?)/img/(.*)",
             "dest": "/public/img/$2"
         },
         {
-            "src": "/([a-z]{2,3})/sitemap\\.xml$",
+            "src": "/([a-z]{2,3}(?:-[a-z]{2,3})?)/sitemap\\.xml$",
             "dest": "/public/regions/$1/sitemap.xml"
         },
         {
-            "src": "/([a-z]{2,3})/([^/]+)$",
+            "src": "/([a-z]{2,3}(?:-[a-z]{2,3})?)/([^/]+)$",
             "dest": "/public/regions/$1/$2.html"
         },
         {
-            "src": "/([a-z]{2,3})$",
+            "src": "/([a-z]{2,3}(?:-[a-z]{2,3})?)$",
             "dest": "/public/regions/$1/index.html"
         },
         {

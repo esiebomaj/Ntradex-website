@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="fr-CA">
 <head>
 <meta charset="UTF-8" />
   <base href="/" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privatkundensupport &amp; Geschäftssupport - ntradeX</title>
-<meta name="description" content="Nehmen Sie Kontakt mit Ntradex auf. Privatkundensupport, Geschäftspartnerschaftsanfragen, API-Zugriff und Unternehmens-Onboarding. Wir antworten innerhalb von 24 Stunden.">
-<meta property="og:title" content="Kontakt Ntradex">
+<title>Support personnel &amp; Support entreprise - ntradeX</title>
+<meta name="description" content="Contactez Ntradex. Support client personnel, demandes de partenariat commercial, accès API et intégration en entreprise. Nous répondons dans les 24 heures.">
+<meta property="og:title" content="Contact Ntradex">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ntradex.ca/contact">
 <link rel="canonical" href="https://ntradex.ca/contact">
@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="fonts/css/switzer.css">
 <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
 <style>
-/* ── Kontakt page styles ── */
+/* ── Contact page styles ── */
 .nx-contact-hero{background:linear-gradient(135deg,var(--blue-deep) 0%,var(--blue-dark) 60%,#0a2d4a 100%);padding:140px 0 72px;position:relative;overflow:hidden;}
 .nx-contact-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 75% 40%,rgba(1,113,188,.2) 0%,transparent 65%);pointer-events:none;}
 .nx-contact-hero-inner{max-width:640px;}
@@ -39,12 +39,12 @@
 .nx-ctab.active{color:var(--blue);border-bottom-color:var(--blue);}
 .nx-ctab:hover:not(.active){color:var(--blue-dark);}
 
-/* Kontakt body */
+/* Contact body */
 .nx-contact-body{padding:64px 0 80px;background:#f8f9fa;min-height:60vh;}
 .nx-contact-panel{display:none;}
 .nx-contact-panel.active{display:block;}
 
-/* Privatkunden panel */
+/* Personnel panel */
 .nx-personal-contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:start;}
 .nx-contact-info h2{font-size:1.4rem;font-weight:800;color:var(--blue-deep);margin-bottom:12px;}
 .nx-contact-info p{color:#666;font-size:.92rem;line-height:1.7;margin-bottom:28px;}
@@ -74,7 +74,7 @@
 .nx-form-success h4{font-size:1.1rem;font-weight:700;color:var(--blue-deep);margin-bottom:8px;}
 .nx-form-success p{color:#666;font-size:.9rem;}
 
-/* Geschäftskunden panel */
+/* Entreprise panel */
 .nx-biz-contact-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:start;}
 .nx-biz-form-card{background:#fff;border:1px solid #e8edf2;border-radius:20px;padding:40px;}
 .nx-biz-form-card h3{font-size:1.15rem;font-weight:800;color:var(--blue-deep);margin-bottom:6px;}
@@ -124,7 +124,7 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9DB553R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- ── Navigation ── -->
-<nav class="nx-nav" id="nx-nav" role="navigation" aria-label="Hauptnavigation">
+<nav class="nx-nav" id="nx-nav" role="navigation" aria-label="Navigation principale">
   <div class="nx-nav-inner">
 
     <a href="/" data-path="/" class="nx-logo" aria-label="Ntradex — Home">
@@ -132,65 +132,65 @@
     </a>
 
     <ul class="nx-nav-links" role="list">
-      <li><a href="/personal" data-path="/personal">Privatkunden</a></li>
-      <li><a href="/business" data-path="/business">Geschäftskunden</a></li>
+      <li><a href="/personal" data-path="/personal">Personnel</a></li>
+      <li><a href="/business" data-path="/business">Entreprise</a></li>
       <li class="nx-nav-item">
-        <a href="/services" data-path="/services">Dienstleistungen <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
+        <a href="/services" data-path="/services">Services <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
         <div class="nx-dropdown">
-          <a href="/services#remittance" data-path="/services#remittance">Geldtransfer</a>
-          <a href="/services#business-fx" data-path="/services#business-fx">Unternehmens-FX</a>
-          <a href="/services#api" data-path="/services#api">API &amp; Integrationen</a>
+          <a href="/services#remittance" data-path="/services#remittance">Envoi d'argent</a>
+          <a href="/services#business-fx" data-path="/services#business-fx">Change entreprise</a>
+          <a href="/services#api" data-path="/services#api">API &amp; Intégrations</a>
         </div>
       </li>
       <li class="nx-nav-item">
-        <a href="#">Unternehmen <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
+        <a href="#">Entreprise <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
         <div class="nx-dropdown">
-          <a href="/about" data-path="/about">Über uns</a>
-          <a href="/contact" data-path="/contact" class="active">Kontakt</a>
+          <a href="/about" data-path="/about">À propos</a>
+          <a href="/contact" data-path="/contact" class="active">Contact</a>
           <a target="_blank" href="https://blog.ntradex.ca/blogposts">Blog</a>
-          <a target="_blank" href="https://blog.ntradex.ca/base">Wissensdatenbank</a>
+          <a target="_blank" href="https://blog.ntradex.ca/base">Base de connaissances</a>
         </div>
       </li>
       <li class="nx-nav-item">
-        <a href="https://docs.ntradex.ca" target="_blank">Entwickler <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
+        <a href="https://docs.ntradex.ca" target="_blank">Développeurs <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
         <div class="nx-dropdown">
-          <a target="_blank" href="https://docs.ntradex.ca">API-Dokumentation</a>
+          <a target="_blank" href="https://docs.ntradex.ca">Documentation API</a>
         </div>
       </li>
     </ul>
 
     <div class="nx-nav-ctas">
-      <a href="https://business.ntradex.ca/login" class="nx-nav-login">Anmelden</a>
-      <a href="/personal#get-started" data-path="/personal#get-started" class="nx-btn nx-btn-primary nx-btn-sm">Jetzt starten</a>
+      <a href="https://business.ntradex.ca/login" class="nx-nav-login">Connexion</a>
+      <a href="/personal#get-started" data-path="/personal#get-started" class="nx-btn nx-btn-primary nx-btn-sm">Commencer</a>
       <div class="nx-region-selector" id="nx-region-selector">
-        <div id="default-country" class="nx-region-btn" role="button" aria-label="Wählen region" aria-expanded="false"></div>
+        <div id="default-country" class="nx-region-btn" role="button" aria-label="Sélectionner region" aria-expanded="false"></div>
       </div>
     </div>
 
-    <button class="nx-hamburger" id="nx-hamburger" aria-label="Menü öffnen" aria-expanded="false">
+    <button class="nx-hamburger" id="nx-hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
 
-<div class="nx-mobile-menu" id="nx-mobile-menu" role="dialog" aria-label="Mobile Navigation">
-  <a href="/personal" data-path="/personal">Privatkunden</a>
-  <a href="/business" data-path="/business">Geschäftskunden</a>
+<div class="nx-mobile-menu" id="nx-mobile-menu" role="dialog" aria-label="Navigation mobile">
+  <a href="/personal" data-path="/personal">Personnel</a>
+  <a href="/business" data-path="/business">Entreprise</a>
   <a href="/services" data-path="/services">Services</a>
-  <a href="/about" data-path="/about">Über uns</a>
-  <a href="/contact" data-path="/contact">Kontakt</a>
+  <a href="/about" data-path="/about">À propos</a>
+  <a href="/contact" data-path="/contact">Contact</a>
   <div style="margin-top:8px;padding-top:8px;border-top:1px solid #eef1f5;">
-    <p style="font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#72a1c3;margin:12px 0 8px;">Unternehmen</p>
+    <p style="font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#72a1c3;margin:12px 0 8px;">Entreprise</p>
     <a target="_blank" href="https://blog.ntradex.ca/blogposts">Blog</a>
-    <a target="_blank" href="https://blog.ntradex.ca/base">Wissensdatenbank</a>
+    <a target="_blank" href="https://blog.ntradex.ca/base">Base de connaissances</a>
   </div>
   <div style="margin-top:8px;padding-top:8px;border-top:1px solid #eef1f5;">
-    <p style="font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#72a1c3;margin:12px 0 8px;">Entwickler</p>
-    <a target="_blank" href="https://docs.ntradex.ca">API-Dokumentation</a>
+    <p style="font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#72a1c3;margin:12px 0 8px;">Développeurs</p>
+    <a target="_blank" href="https://docs.ntradex.ca">Documentation API</a>
   </div>
   <div class="nx-mobile-menu-ctas">
-    <a href="https://business.ntradex.ca/login" class="nx-btn nx-btn-outline" style="width:100%;justify-content:center;">Anmelden</a>
-    <a href="/personal#get-started" data-path="/personal#get-started" class="nx-btn nx-btn-primary" style="width:100%;justify-content:center;">Jetzt starten — kostenlos</a>
+    <a href="https://business.ntradex.ca/login" class="nx-btn nx-btn-outline" style="width:100%;justify-content:center;">Connexion</a>
+    <a href="/personal#get-started" data-path="/personal#get-started" class="nx-btn nx-btn-primary" style="width:100%;justify-content:center;">Commencer — C'est gratuit</a>
   </div>
 </div>
 
@@ -198,9 +198,9 @@
 <section class="nx-contact-hero">
   <div class="nx-container">
     <div class="nx-contact-hero-inner" data-nx-reveal>
-      <div class="nx-eyebrow"><i class="fas fa-envelope"></i> Kontakt aufnehmen</div>
-      <h1>Wir sind da, wenn Sie uns brauchen</h1>
-      <p>Privatkundensupport, Geschäftspartnerschaftsanfragen, API-Zugriff und Unternehmens-Onboarding. Sagen Sie uns, was Sie brauchen, und wir antworten innerhalb von 24 Stunden.</p>
+      <div class="nx-eyebrow"><i class="fas fa-envelope"></i> Entrez en contact</div>
+      <h1>Nous sommes là quand vous avez besoin de nous</h1>
+      <p>Support client personnel, demandes de partenariat commercial, accès API et intégration en entreprise. Dites-nous ce dont vous avez besoin et nous vous répondrons dans les 24 heures.</p>
     </div>
   </div>
 </section>
@@ -210,205 +210,205 @@
   <div class="nx-container">
     <div class="nx-contact-tabs-inner">
       <button class="nx-ctab active" id="tab-personal" data-panel="personal">
-        <i class="fas fa-user"></i> Privatkundensupport &amp; Kontosupport
+        <i class="fas fa-user"></i> Support personnel &amp; compte
       </button>
       <button class="nx-ctab" id="tab-business" data-panel="business">
-        <i class="fas fa-briefcase"></i> Geschäft &amp; Partnerschaft
+        <i class="fas fa-briefcase"></i> Entreprise &amp; partenariat
       </button>
     </div>
   </div>
 </div>
 
-<!-- ── Kontakt Body ── -->
+<!-- ── Contact Body ── -->
 <section class="nx-contact-body" id="nx-contact-body">
   <div class="nx-container">
 
-    <!-- Privatkunden Panel -->
+    <!-- Personnel Panel -->
     <div class="nx-contact-panel active" id="panel-personal">
       <div class="nx-personal-contact-grid">
         <div class="nx-contact-info" data-nx-reveal>
-          <h2>Privatkundensupport</h2>
-          <p>Bestehender Kontoinhaber oder benötigen Sie Hilfe bei einer Überweisung? Unser Support-Team ist über mehrere Kanäle erreichbar. Verwenden Sie den Live-Chat, um die schnellste Antwort zu erhalten. Wir antworten normalerweise in weniger als 5 Minuten.</p>
+          <h2>Support client personnel</h2>
+          <p>Titulaire d'un compte existant ou besoin d'aide pour un transfert? Notre équipe d'assistance est disponible sur plusieurs canaux. Pour une réponse la plus rapide, utilisez la discussion en direct, car nous répondons généralement en moins de 5 minutes.</p>
           <a href="#" class="nx-contact-channel" onclick="return false;">
             <div class="nx-channel-icon"><i class="fas fa-comments"></i></div>
             <div class="nx-channel-text">
-              <strong>Live-Chat</strong>
-              <span>Am schnellsten — normalerweise unter 5 Minuten. Rund um die Uhr verfügbar.</span>
+              <strong>Discussion en direct</strong>
+              <span>Le plus rapide — généralement moins de 5 minutes. Disponible 24h/24, 7j/7.</span>
             </div>
           </a>
           <a href="mailto:support@ntradex.ca" class="nx-contact-channel">
             <div class="nx-channel-icon"><i class="fas fa-envelope"></i></div>
             <div class="nx-channel-text">
-              <strong>E-Mail-Support</strong>
-              <span>support@ntradex.ca — Antwort innerhalb von 24 Stunden.</span>
+              <strong>Support par e-mail</strong>
+              <span>support@ntradex.ca — réponse dans les 24 heures.</span>
             </div>
           </a>
           <a href="https://ntradex.onelink.me/c2ob/sgox4te3" class="nx-contact-channel">
             <div class="nx-channel-icon"><i class="fas fa-tachometer-alt"></i></div>
             <div class="nx-channel-text">
-              <strong>Konto-Dashboard</strong>
-              <span>Melden Sie sich an, um Überweisungen zu verfolgen, Empfänger zu verwalten und die Transaktionshistorie anzuzeigen.</span>
+              <strong>Tableau de bord du compte</strong>
+              <span>Connectez-vous pour suivre les transferts, gérer les bénéficiaires et afficher l'historique des transactions.</span>
             </div>
           </a>
           <a href="https://ntradex.onelink.me/c2ob/sgox4te3" class="nx-contact-channel">
             <div class="nx-channel-icon"><i class="fas fa-mobile-alt"></i></div>
             <div class="nx-channel-text">
-              <strong>Mobilanwendung</strong>
-              <span>iOS &amp; Android — Geld unterwegs senden und Überweisungen verfolgen.</span>
+              <strong>Application mobile</strong>
+              <span>iOS &amp; Android — envoyez de l'argent et suivez les transferts en déplacement.</span>
             </div>
           </a>
         </div>
         <div class="nx-contact-form-card" data-nx-reveal data-nx-delay="120">
-          <h3>Senden Sie uns eine Nachricht</h3>
-          <p>Nicht dringend? Füllen Sie Ihre Angaben aus und wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+          <h3>Envoyez-nous un message</h3>
+          <p>Pas urgent? Remplissez vos coordonnées et nous vous recontacterons dans les 24 heures.</p>
           <form id="personal-contact-form">
             <div class="nx-form-row">
               <div class="nx-form-group">
-                <label for="p-first-name">Vorname</label>
-                <input type="text" id="p-first-name" name="first_name" placeholder="Vorname" required>
+                <label for="p-first-name">Prénom</label>
+                <input type="text" id="p-first-name" name="first_name" placeholder="Prénom" required>
               </div>
               <div class="nx-form-group">
-                <label for="p-last-name">Nachname</label>
-                <input type="text" id="p-last-name" name="last_name" placeholder="Nachname" required>
+                <label for="p-last-name">Nom de famille</label>
+                <input type="text" id="p-last-name" name="last_name" placeholder="Nom de famille" required>
               </div>
             </div>
             <div class="nx-form-group">
-              <label for="p-email">E-Mail</label>
+              <label for="p-email">E-mail</label>
               <input type="email" id="p-email" name="email" placeholder="your@email.com" required>
             </div>
             <div class="nx-form-group">
-              <label for="p-subject">Womit benötigen Sie Hilfe?</label>
+              <label for="p-subject">Avec quoi vous avez besoin d'aide?</label>
               <select id="p-subject" name="subject">
-                <option value="">Wählen Sie ein Thema</option>
-                <option value="transfer-status">Überweisungsstatus / Verfolgung</option>
-                <option value="account-access">Kontozugriff oder Anmeldung</option>
-                <option value="kyc">Identitätsüberprüfung (KYC)</option>
-                <option value="rates">Wechselkurse &amp; Gebühren</option>
-                <option value="recipient">Hinzufügen eines Empfängers</option>
-                <option value="refund">Rückerstattung oder Stornierung</option>
-                <option value="app">Problem mit der Mobilanwendung</option>
-                <option value="other">Sonstiges</option>
+                <option value="">Sélectionnez un sujet</option>
+                <option value="transfer-status">État du transfert / suivi</option>
+                <option value="account-access">Accès au compte ou connexion</option>
+                <option value="kyc">Vérification d'identité (KYC)</option>
+                <option value="rates">Taux de change &amp; frais</option>
+                <option value="recipient">Ajout d'un bénéficiaire</option>
+                <option value="refund">Remboursement ou annulation</option>
+                <option value="app">Problème d'application mobile</option>
+                <option value="other">Autre</option>
               </select>
             </div>
             <div class="nx-form-group">
-              <label for="p-message">Nachricht</label>
-              <textarea id="p-message" name="message" placeholder="Beschreiben Sie Ihr Problem oder Ihre Frage..."></textarea>
+              <label for="p-message">Message</label>
+              <textarea id="p-message" name="message" placeholder="Décrivez votre problème ou votre question..."></textarea>
             </div>
-            <button type="submit" class="nx-form-submit">Nachricht senden <i class="fas fa-arrow-right"></i></button>
+            <button type="submit" class="nx-form-submit">Envoyer un message <i class="fas fa-arrow-right"></i></button>
           </form>
           <div class="nx-form-success" id="personal-success">
             <i class="fas fa-check-circle"></i>
-            <h4>Nachricht empfangen</h4>
-            <p>Wir melden uns innerhalb von 24 Stunden unter der angegebenen E-Mail-Adresse bei Ihnen.</p>
+            <h4>Message reçu</h4>
+            <p>Nous vous recontacterons à l'e-mail que vous avez fourni dans les 24 heures.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Geschäftskunden Panel -->
+    <!-- Entreprise Panel -->
     <div class="nx-contact-panel" id="panel-business">
       <div class="nx-biz-contact-grid">
         <div class="nx-biz-form-card" data-nx-reveal>
-          <h3>Geschäftsanfrage</h3>
-          <p class="nx-biz-form-lead">Erzählen Sie uns von Ihrem Geschäft und Ihren Zahlungsanforderungen. Ein Mitglied unseres Teams wird sich innerhalb eines Geschäftstages mit Ihnen in Verbindung setzen.</p>
+          <h3>Demande commerciale</h3>
+          <p class="nx-biz-form-lead">Parlez-nous de votre entreprise et de vos besoins en matière de paiement. Un membre de notre équipe vous contactera dans un jour ouvrable.</p>
           <form id="biz-contact-form">
             <div class="nx-form-row">
               <div class="nx-form-group">
-                <label for="b-first-name">Vorname</label>
-                <input type="text" id="b-first-name" name="first_name" placeholder="Vorname" required>
+                <label for="b-first-name">Prénom</label>
+                <input type="text" id="b-first-name" name="first_name" placeholder="Prénom" required>
               </div>
               <div class="nx-form-group">
-                <label for="b-last-name">Nachname</label>
-                <input type="text" id="b-last-name" name="last_name" placeholder="Nachname" required>
+                <label for="b-last-name">Nom de famille</label>
+                <input type="text" id="b-last-name" name="last_name" placeholder="Nom de famille" required>
               </div>
             </div>
             <div class="nx-form-group">
-              <label for="b-email">Arbeits-E-Mail</label>
+              <label for="b-email">E-mail professionnel</label>
               <input type="email" id="b-email" name="email" placeholder="you@company.com" required>
             </div>
             <div class="nx-form-row">
               <div class="nx-form-group">
-                <label for="b-company">Unternehmensname</label>
+                <label for="b-company">Nom de l'entreprise</label>
                 <input type="text" id="b-company" name="company" placeholder="Acme Corp" required>
               </div>
               <div class="nx-form-group">
-                <label for="b-type">Geschäftstyp</label>
+                <label for="b-type">Type d'entreprise</label>
                 <select id="b-type" name="business_type">
-                  <option value="">Typ auswählen</option>
-                  <option value="fintech">Fintech-Plattform</option>
+                  <option value="">Sélectionnez le type</option>
+                  <option value="fintech">Plateforme fintech</option>
                   <option value="import-export">Import / Export</option>
-                  <option value="mto">Geldtransferbetreiber (MTO)</option>
-                  <option value="fx">Devisengeschäft</option>
-                  <option value="ecommerce">E-Commerce</option>
-                  <option value="other">Sonstiges</option>
+                  <option value="mto">Opérateur de transfert d'argent (MTO)</option>
+                  <option value="fx">Entreprise FX</option>
+                  <option value="ecommerce">E-commerce</option>
+                  <option value="other">Autre</option>
                 </select>
               </div>
             </div>
             <div class="nx-form-group">
-              <label for="b-volume">Monatliches grenzüberschreitendes Volumen (ca.)</label>
+              <label for="b-volume">Volume mensuel transfrontalier (approx.)</label>
               <select id="b-volume" name="monthly_volume">
-                <option value="">Bereich auswählen</option>
-                <option value="under-100k">Unter 100.000 $ / Monat</option>
-                <option value="100k-500k">100.000 $ – 500.000 $ / Monat</option>
-                <option value="500k-1m">500.000 $ – 1 Million $ / Monat</option>
-                <option value="1m-5m">1 Million $ – 5 Millionen $ / Monat</option>
-                <option value="5m-plus">5 Millionen $ + / Monat</option>
+                <option value="">Sélectionnez la plage</option>
+                <option value="under-100k">Moins de 100 000 $ / mois</option>
+                <option value="100k-500k">100 000 $ – 500 000 $ / mois</option>
+                <option value="500k-1m">500 000 $ – 1 M $ / mois</option>
+                <option value="1m-5m">1 M $ – 5 M $ / mois</option>
+                <option value="5m-plus">5 M $ + / mois</option>
               </select>
             </div>
             <div class="nx-form-group">
-              <label for="b-corridors">Korridore von Interesse</label>
-              <input type="text" id="b-corridors" name="corridors" placeholder="z. B. Kanada → Nigeria, Australien → Ghana">
+              <label for="b-corridors">Corridors d'intérêt</label>
+              <input type="text" id="b-corridors" name="corridors" placeholder="p. ex. Canada → Nigéria, Australie → Ghana">
             </div>
             <div class="nx-form-group">
-              <label for="b-interest">Wonach suchen Sie?</label>
+              <label for="b-interest">Que recherchez-vous?</label>
               <select id="b-interest" name="interest">
-                <option value="">Wählen</option>
-                <option value="api">Geldwechseldienste</option>
-                <option value="api">Brieftasche zum Handeln von Währungen</option>
-                <option value="api">Virtuelles Konto</option>
-                <option value="api">API-Integration</option>
-                <option value="bulk">Massen- / Stapelzahlungen</option>
-                <option value="fx">Devisenabsicherung &amp; Kursfixierung</option>
-                <option value="white-label">White-Label / Partnerschaft</option>
-                <option value="enterprise">Enterprise-Konto</option>
-                <option value="other">Sonstiges</option>
+                <option value="">Sélectionner</option>
+                <option value="api">Services de change</option>
+                <option value="api">Portefeuille pour le trading de devises</option>
+                <option value="api">Compte virtuel</option>
+                <option value="api">Intégration API</option>
+                <option value="bulk">Paiements en masse / par lot</option>
+                <option value="fx">Couverture FX &amp; verrouillage de taux</option>
+                <option value="white-label">Étiquette blanche / partenariat</option>
+                <option value="enterprise">Compte entreprise</option>
+                <option value="other">Autre</option>
               </select>
             </div>
             <div class="nx-form-group">
-              <label for="b-message">Gibt es noch etwas, das wir wissen sollten?</label>
-              <textarea id="b-message" name="message" placeholder="Erzählen Sie uns von Ihrem Use-Case, aktuellen Problemen oder was Sie von einem Zahlungspartner benötigen..."></textarea>
+              <label for="b-message">Y a-t-il autre chose que nous devrions savoir?</label>
+              <textarea id="b-message" name="message" placeholder="Parlez-nous de votre cas d'usage, de vos points de douleur actuels ou de ce dont vous avez besoin d'un partenaire de paiement..."></textarea>
             </div>
-            <button type="submit" class="nx-form-submit">Anfrage einreichen <i class="fas fa-arrow-right"></i></button>
+            <button type="submit" class="nx-form-submit">Soumettre une demande <i class="fas fa-arrow-right"></i></button>
           </form>
           <div class="nx-form-success" id="biz-success">
             <i class="fas fa-check-circle"></i>
-            <h4>Anfrage eingegangen</h4>
-            <p>Ein Mitglied unseres Geschäftsteams wird sich innerhalb eines Geschäftstages mit Ihnen in Verbindung setzen.</p>
+            <h4>Demande reçue</h4>
+            <p>Un membre de notre équipe commerciale vous recontactera dans un jour ouvrable.</p>
           </div>
         </div>
         <div class="nx-biz-info" data-nx-reveal data-nx-delay="120">
-          <h2>Ist Ntradex der richtige Partner?</h2>
-          <p>Wir arbeiten am besten mit Unternehmen zusammen, die unser ideales Partnerprofil erfüllen. Falls Sie unsicher sind, reichen Sie eine Anfrage ein und wir teilen Ihnen innerhalb von 24 Stunden mit.</p>
+          <h2>Ntradex est-il le bon partenaire?</h2>
+          <p>Nous travaillons mieux avec les entreprises qui correspondent à notre profil de partenaire idéal. Si vous n'êtes pas sûr, soumettez une demande et nous vous le ferons savoir dans les 24 heures.</p>
           <div class="nx-biz-icp-note">
-            <h4>Unser idealer Geschäftspartner</h4>
+            <h4>Notre partenaire commercial idéal</h4>
             <ul>
-              <li>Fintech-Plattform, Import-/Exportgeschäft, MTO oder Devisengeschäft</li>
-              <li>Tätig in Afrika (NG, GH, KE, ZA, UG, TZ) oder Global North (AU, CA, GB, US)</li>
-              <li>Verarbeitung von 500.000 $ + pro Monat in grenzüberschreitenden Transaktionen</li>
+              <li>Plateforme fintech, entreprise d'import/export, MTO ou entreprise FX</li>
+              <li>Opération en Afrique (NG, GH, KE, ZA, UG, TZ) ou Nord mondial (AU, CA, GB, US)</li>
+              <li>Traitement de 500 000 $ + par mois en transactions transfrontalières</li>
             </ul>
           </div>
-          <p style="font-size:.82rem;color:#999;margin-top:12px;line-height:1.6;">Unter 500.000 $ / Monat? Sie sind immer noch willkommen — wir werden Ihr Profil bewerten und können möglicherweise einen Wachstumsplan anbieten, wenn Ihr Volumen skaliert.</p>
+          <p style="font-size:.82rem;color:#999;margin-top:12px;line-height:1.6;">Moins de 500 000 $/mois? Vous êtes toujours les bienvenus — nous évaluerons votre profil et pourrons vous proposer un plan de croissance à mesure que votre volume augmente.</p>
           <div class="nx-biz-contact-channel">
             <i class="fas fa-envelope"></i>
-            <span>Direkt: <a href="mailto:business@ntradex.ca">business@ntradex.ca</a></span>
+            <span>Direct: <a href="mailto:business@ntradex.ca">business@ntradex.ca</a></span>
           </div>
           <div class="nx-biz-contact-channel">
             <i class="fas fa-file-alt"></i>
-            <span>API-Dokumentation: <a href="/services#api" data-path="/services#api">API-Übersicht anzeigen</a></span>
+            <span>Documentation API: <a href="/services#api" data-path="/services#api">Voir l'aperçu de l'API</a></span>
           </div>
           <div class="nx-biz-contact-channel">
             <i class="fas fa-shield-alt"></i>
-            <span>Compliance-Übersicht: <a href="/compliance" data-path="/compliance">Unsere Lizenzen anzeigen</a></span>
+            <span>Aperçu de la conformité: <a href="/compliance" data-path="/compliance">Voir nos licences</a></span>
           </div>
         </div>
       </div>
@@ -421,33 +421,33 @@
 <section class="nx-contact-faq">
   <div class="nx-container">
     <div class="nx-contact-faq-header" data-nx-reveal>
-      <h2>Häufig gestellte Fragen</h2>
-      <p>Schnelle Antworten, bevor Sie sich mit uns in Verbindung setzen.</p>
+      <h2>Questions fréquemment posées</h2>
+      <p>Des réponses rapides avant de nous contacter.</p>
     </div>
     <div class="nx-faq-grid">
       <div class="nx-faq-item" data-nx-reveal>
-        <h4>Wie lange dauern Überweisungen?</h4>
-        <p>Die meisten Überweisungen treffen innerhalb von Minuten bis Stunden ein. Die genaue Zeit hängt vom Korridor und der Auszahlungsmethode ab. Lieferung am selben Tag ist auf allen Hauptstrecken verfügbar.</p>
+        <h4>Combien de temps les transferts prennent-ils?</h4>
+        <p>La plupart des transferts arrivent en quelques minutes à quelques heures. Le timing exact dépend du corridor et de la méthode de paiement. La livraison le jour même est disponible sur tous les itinéraires majeurs.</p>
       </div>
       <div class="nx-faq-item" data-nx-reveal data-nx-delay="80">
-        <h4>Was sind Ihre Gebühren?</h4>
-        <p>Wir berechnen einen transparenten Spread auf dem mittleren Marktkurs plus eine feste Überweisungsgebühr. Sie sehen die vollständigen Kosten, einschließlich genau das, was Ihr Empfänger erhält, bevor Sie bestätigen.</p>
+        <h4>Quels sont vos frais?</h4>
+        <p>Nous facturons un écart transparent sur le taux du marché intermédiaire plus un frais de transfert fixe. Vous verrez le coût total, y compris exactement ce que votre destinataire reçoit, avant de confirmer.</p>
       </div>
       <div class="nx-faq-item" data-nx-reveal>
-        <h4>Ist Ntradex reguliert?</h4>
-        <p>Ja. Wir sind ein bei FINTRAC registriertes Gelddienstleistungsunternehmen in Kanada und unter dem Retail Payment Activities Act der Bank of Canada registriert. <a href="/compliance" data-path="/compliance">Siehe unsere vollständige Compliance-Seite.</a></p>
+        <h4>Ntradex est-il réglementé?</h4>
+        <p>Oui. Nous sommes une entreprise de services monétaires enregistrée par FINTRAC au Canada et enregistrée en vertu de la Loi sur les activités associées aux paiements de détail de la Banque du Canada. <a href="/compliance" data-path="/compliance">Voir notre page de conformité complète.</a></p>
       </div>
       <div class="nx-faq-item" data-nx-reveal data-nx-delay="80">
-        <h4>In welche Länder kann ich senden?</h4>
-        <p>Wir unterstützen derzeit über 80+ Länder mit Korridoren aus Kanada, Australien, Großbritannien und den USA nach Nigeria, Ghana und Kenia, mit mehr Ländern, die 2026 kommen. <a href="/services" data-path="/services">Alle Korridore anzeigen.</a></p>
+        <h4>À quels pays puis-je envoyer?</h4>
+        <p>Nous supportons actuellement plus de 80+ pays avec des corridors depuis le Canada, l'Australie, le Royaume-Uni et les États-Unis vers la Nigéria, le Ghana et le Kenya, avec plus de pays à venir en 2026. <a href="/services" data-path="/services">Voir tous les corridors.</a></p>
       </div>
       <div class="nx-faq-item" data-nx-reveal>
-        <h4>Wie überprüfe ich meine Identität?</h4>
-        <p>KYC-Überprüfung ist für alle Konten erforderlich. Sie benötigen einen von der Regierung ausgestellten Ausweis und einen Adressnachweis. Der Prozess ist vollständig digital und dauert normalerweise weniger als 10 Minuten.</p>
+        <h4>Comment vérifier mon identité?</h4>
+        <p>La vérification KYC est requise pour tous les comptes. Vous aurez besoin d'une pièce d'identité délivrée par le gouvernement et d'une preuve de résidence. Le processus est entièrement numérique et prend généralement moins de 10 minutes.</p>
       </div>
       <div class="nx-faq-item" data-nx-reveal data-nx-delay="80">
-        <h4>Bieten Sie eine API für Unternehmen an?</h4>
-        <p>Ja — eine vollständige REST-API mit Webhook-Unterstützung, Kursfixierung, Massenzahlungen und Echtzeit-Balancenanfragen. <a href="/contact?type=business" data-path="/contact?type=business">Reichen Sie eine Geschäftsanfrage ein</a>, um Zugriff zu erhalten.</p>
+        <h4>Offrez-vous une API pour les entreprises?</h4>
+        <p>Oui — une API REST complète avec support webhook, verrouillage de taux, paiements en masse et demandes de solde en temps réel. <a href="/contact?type=business" data-path="/contact?type=business">Soumettre une demande commerciale</a> pour avoir accès.</p>
       </div>
     </div>
   </div>
@@ -463,7 +463,7 @@
         <a href="/" data-path="/" aria-label="Ntradex — Home">
           <img src="img/logo-light.png" alt="Ntradex" style="height:28px;width:auto;" />
         </a>
-        <p>Ntradex Inc. ist ein registriertes und reguliertes Gelddienstleistungsunternehmen (MSB) beim Zentrum für Analyse von Finanztransaktionen und Berichten Kanadas (FINTRAC) ID: C10001380</p>
+        <p>Ntradex Inc. est une entreprise de services monétaires (MSB) enregistrée et réglementée auprès du Centre d'analyse des opérations et déclarations financières du Canada (CANAFE) ID : C10001380</p>
         <div class="nx-footer-socials">
           <a href="https://twitter.com/ntradex" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
           <a href="https://www.linkedin.com/company/ntradex" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -472,39 +472,39 @@
         </div>
       </div>
 
-      <!-- Privatkunden -->
+      <!-- Personnel -->
       <div class="nx-footer-col">
-        <h6>Privatkunden</h6>
+        <h6>Personnel</h6>
         <ul>
-          <li><a href="/personal" data-path="/personal">Geld senden</a></li>
-          <li><a href="/personal#receive" data-path="/personal#receive">Gelder empfangen</a></li>
-          <li><a href="/personal#rates" data-path="/personal#rates">Wechselkurse</a></li>
-          <li><a href="/personal#app" data-path="/personal#app">App herunterladen</a></li>
+          <li><a href="/personal" data-path="/personal">Envoyer de l'argent</a></li>
+          <li><a href="/personal#receive" data-path="/personal#receive">Recevoir des fonds</a></li>
+          <li><a href="/personal#rates" data-path="/personal#rates">Taux de change</a></li>
+          <li><a href="/personal#app" data-path="/personal#app">Télécharger l'app</a></li>
         </ul>
       </div>
 
-      <!-- Geschäftskunden -->
+      <!-- Entreprise -->
       <div class="nx-footer-col">
-        <h6>Geschäftskunden</h6>
+        <h6>Entreprise</h6>
         <ul>
-          <li><a href="/business" data-path="/business">Unternehmens-Zahlungen</a></li>
-          <li><a href="/business#api" data-path="/business#api">API-Integrationen</a></li>
-          <li><a href="/business#fx" data-path="/business#fx">Devisenverwaltung</a></li>
-          <li><a href="/business#bulk" data-path="/business#bulk">Massenzahlungen</a></li>
-          <li><a href="/contact?type=business" data-path="/contact?type=business">Vertrieb kontaktieren</a></li>
+          <li><a href="/business" data-path="/business">Paiements d'entreprise</a></li>
+          <li><a href="/business#api" data-path="/business#api">Intégrations API</a></li>
+          <li><a href="/business#fx" data-path="/business#fx">Gestion FX</a></li>
+          <li><a href="/business#bulk" data-path="/business#bulk">Paiements en masse</a></li>
+          <li><a href="/contact?type=business" data-path="/contact?type=business">Parler aux ventes</a></li>
         </ul>
       </div>
 
       <!-- Company -->
       <div class="nx-footer-col">
-        <h6>Unternehmen</h6>
+        <h6>Société</h6>
         <ul>
-          <li><a href="/about" data-path="/about">Über Ntradex</a></li>
-          <li><a href="/compliance" data-path="/compliance">Compliance</a></li>
-          <li><a href="/services" data-path="/services">Alle Dienste</a></li>
-          <li><a href="/contact" data-path="/contact">Kontakt</a></li>
+          <li><a href="/about" data-path="/about">À propos Ntradex</a></li>
+          <li><a href="/compliance" data-path="/compliance">Conformité</a></li>
+          <li><a href="/services" data-path="/services">Tous les services</a></li>
+          <li><a href="/contact" data-path="/contact">Nous contacter</a></li>
           <li><a target="_blank" href="https://blog.ntradex.ca/blogposts">Blog</a></li>
-          <li><a target="_blank" href="https://blog.ntradex.ca/base">Wissensdatenbank</a></li>
+          <li><a target="_blank" href="https://blog.ntradex.ca/base">Base de connaissances</a></li>
         </ul>
       </div>
 
@@ -514,9 +514,9 @@
     <div class="nx-footer-bottom">
       <p>&copy; 2023–2026 Ntradex, Inc. FINTRAC MSB &amp; Bank of Canada RPAA registered.</p>
       <div class="nx-footer-bottom-links">
-        <a href="/privacy" data-path="/privacy">Datenschutz</a>
-        <a href="/terms" data-path="/terms">AGB</a>
-        <a href="/aml-policy" data-path="/aml-policy">Geldwäscherichtlinie</a>
+        <a href="/privacy" data-path="/privacy">Privacy</a>
+        <a href="/terms" data-path="/terms">Terms</a>
+        <a href="/aml-policy" data-path="/aml-policy">AML Policy</a>
         <a href="/compliance" data-path="/compliance">Compliance</a>
       </div>
     </div>
@@ -527,7 +527,7 @@
 <!-- Zendesk -->
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=ab55e257-a5b0-4c54-b58f-f78d7d19606f" async></script>
 
-<!-- Region Wählenor -->
+<!-- Region Sélectionneror -->
 <script src="js/links.js"></script>
 
 <!-- Ntradex Core JS -->
@@ -596,8 +596,8 @@
 
   /* ── Nav dropdown click/tap toggle ── */
   document.querySelectorAll('.nx-nav-item').forEach(function(item) {
-    var trigger = item.querySelector(':scope > a');
-    var dropdown = item.querySelector('.nx-dropdown');
+    var trigger = item.querySélectionneror(':scope > a');
+    var dropdown = item.querySélectionneror('.nx-dropdown');
     if (!trigger || !dropdown) return;
 
     trigger.addEventListener('click', function(e) {
@@ -625,7 +625,7 @@
     }
   });
 
-  /* ── Region Wählenor Toggle ── */
+  /* ── Region Sélectionneror Toggle ── */
   (function() {
     var sel = document.getElementById('nx-region-selector');
     var btn = document.getElementById('default-country');
@@ -644,7 +644,7 @@
 })();
 </script>
 
-<!-- Kontakt page JS — tab switcher + forms -->
+<!-- Contact page JS — tab switcher + forms -->
 <script>
 (function() {
   'use strict';
@@ -668,13 +668,13 @@
     if (bizTab) bizTab.click();
   }
 
-  /* ── Kontakt forms → Lambda ── */
+  /* ── Contact forms → Lambda ── */
   var LAMBDA_URL = 'https://5xvb47x0ml.execute-api.us-east-1.amazonaws.com/default/website_contactus';
 
   function postToLambda(form, success, buildPayload) {
-    var btn = form.querySelector('button[type="submit"]');
+    var btn = form.querySélectionneror('button[type="submit"]');
     var originalHTML = btn ? btn.innerHTML : '';
-    if (btn) { btn.disabled = true; btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Wird gesendet\u2026'; }
+    if (btn) { btn.disabled = true; btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours\u2026'; }
 
     fetch(LAMBDA_URL, {
       method: 'POST',
@@ -696,7 +696,7 @@
     });
   }
 
-  /* Privatkunden & Account form → support@ntradex.ca */
+  /* Personnel & Account form → support@ntradex.ca */
   var personalForm    = document.getElementById('personal-contact-form');
   var personalSuccess = document.getElementById('personal-success');
   if (personalForm) {
@@ -717,16 +717,16 @@
     });
   }
 
-  /* Geschäftskunden & Partnership form → business@ntradex.ca */
-  var bizKontaktForm    = document.getElementById('biz-contact-form');
-  var bizKontaktSuccess = document.getElementById('biz-success');
-  if (bizKontaktForm) {
-    bizKontaktForm.addEventListener('submit', function(e) {
+  /* Entreprise & Partnership form → business@ntradex.ca */
+  var bizContactForm    = document.getElementById('biz-contact-form');
+  var bizContactSuccess = document.getElementById('biz-success');
+  if (bizContactForm) {
+    bizContactForm.addEventListener('submit', function(e) {
       e.preventDefault();
-      postToLambda(bizKontaktForm, bizKontaktSuccess, function(fd) {
+      postToLambda(bizContactForm, bizContactSuccess, function(fd) {
         var msgParts = [];
         if (fd.get('company'))        msgParts.push('Company: '        + fd.get('company'));
-        if (fd.get('business_type'))  msgParts.push('Business Type: '  + fd.get('business_type'));
+        if (fd.get('business_type'))  msgParts.push('Entreprise Type: '  + fd.get('business_type'));
         if (fd.get('monthly_volume')) msgParts.push('Monthly Volume: ' + fd.get('monthly_volume'));
         if (fd.get('corridors'))      msgParts.push('Corridors: '      + fd.get('corridors'));
         if (fd.get('interest'))       msgParts.push('Interest: '       + fd.get('interest'));

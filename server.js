@@ -19,7 +19,7 @@ app.use(
   })
 );
 
-const ALLOWED_REGIONS = ['au', 'ng', 'gb', 'us', 'ca', 'gh', 'ke', 'cn', 'sg', 'dk', 'de'];
+const ALLOWED_REGIONS = ['au', 'ng', 'gb', 'us', 'ca-en', 'ca-fr', 'gh', 'ke', 'cn', 'sg', 'dk', 'de'];
 
 // Named top-level pages
 const PAGE_MAP = {

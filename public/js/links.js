@@ -5,8 +5,13 @@ const localeOptions = [
     image: "/img/Flag_of_Aus.png"
   },
   {
-    name: "Canada",
-    path: "/ca",
+    name: "Canada (English)",
+    path: "/ca-en",
+    image: "/img/Flag_of_Canada.svg.png"
+  },
+  {
+    name: "Canada (Français)",
+    path: "/ca-fr",
     image: "/img/Flag_of_Canada.svg.png"
   },
   {
@@ -60,10 +65,12 @@ const localeOptions = [
 function getRegionPrefix() {
     const parts = window.location.pathname.split("/").filter(Boolean);
     const region = parts.length > 0 ? parts[0] : null;
+    if (!region) return "";
 
-    if (region && region.length <= 3) {
-      return `/${region}`;
-    }
+    // Match against known locale paths (supports both short codes and hyphenated ones like ca-en, ca-fr)
+    const known = localeOptions.find(opt => opt.path === `/${region}`);
+    if (known) return `/${region}`;
+
     return "";
   }
 
@@ -77,7 +84,7 @@ document.querySelectorAll("a[data-path]").forEach(link => {
 
 
 
-let defaultLocale = localeOptions.find((c) => c.path == getRegionPrefix()) || localeOptions.find((c) => c.name == "Canada")
+let defaultLocale = localeOptions.find((c) => c.path == getRegionPrefix()) || localeOptions.find((c) => c.name == "Canada (English)")
 
 
 function updateDefaultLocale() {
